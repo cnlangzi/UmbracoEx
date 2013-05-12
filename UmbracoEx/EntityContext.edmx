@@ -1,0 +1,2527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="UmbracoModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="UmbracoModelStoreContainer">
+          <EntitySet Name="cmsContent" EntityType="UmbracoModel.Store.cmsContent" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsContentType" EntityType="UmbracoModel.Store.cmsContentType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsContentTypeAllowedContentType" EntityType="UmbracoModel.Store.cmsContentTypeAllowedContentType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsContentVersion" EntityType="UmbracoModel.Store.cmsContentVersion" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsContentXml" EntityType="UmbracoModel.Store.cmsContentXml" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsDataType" EntityType="UmbracoModel.Store.cmsDataType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsDataTypePreValues" EntityType="UmbracoModel.Store.cmsDataTypePreValues" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsDictionary" EntityType="UmbracoModel.Store.cmsDictionary" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsDocument" EntityType="UmbracoModel.Store.cmsDocument" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsDocumentType" EntityType="UmbracoModel.Store.cmsDocumentType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsLanguageText" EntityType="UmbracoModel.Store.cmsLanguageText" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsMacro" EntityType="UmbracoModel.Store.cmsMacro" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsMacroProperty" EntityType="UmbracoModel.Store.cmsMacroProperty" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsMacroPropertyType" EntityType="UmbracoModel.Store.cmsMacroPropertyType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsMember" EntityType="UmbracoModel.Store.cmsMember" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsMember2MemberGroup" EntityType="UmbracoModel.Store.cmsMember2MemberGroup" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsMemberType" EntityType="UmbracoModel.Store.cmsMemberType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsPreviewXml" EntityType="UmbracoModel.Store.cmsPreviewXml" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsPropertyData" EntityType="UmbracoModel.Store.cmsPropertyData" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsPropertyType" EntityType="UmbracoModel.Store.cmsPropertyType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsStylesheet" EntityType="UmbracoModel.Store.cmsStylesheet" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsStylesheetProperty" EntityType="UmbracoModel.Store.cmsStylesheetProperty" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsTab" EntityType="UmbracoModel.Store.cmsTab" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsTagRelationship" EntityType="UmbracoModel.Store.cmsTagRelationship" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsTags" EntityType="UmbracoModel.Store.cmsTags" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsTask" EntityType="UmbracoModel.Store.cmsTask" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsTaskType" EntityType="UmbracoModel.Store.cmsTaskType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="cmsTemplate" EntityType="UmbracoModel.Store.cmsTemplate" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="umbracoDomains" EntityType="UmbracoModel.Store.umbracoDomains" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="umbracoLanguage" EntityType="UmbracoModel.Store.umbracoLanguage" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="umbracoLog" EntityType="UmbracoModel.Store.umbracoLog" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="umbracoNode" EntityType="UmbracoModel.Store.umbracoNode" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="umbracoRelation" EntityType="UmbracoModel.Store.umbracoRelation" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="umbracoRelationType" EntityType="UmbracoModel.Store.umbracoRelationType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="umbracoUser" EntityType="UmbracoModel.Store.umbracoUser" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="umbracoUser2app" EntityType="UmbracoModel.Store.umbracoUser2app" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="umbracoUser2NodeNotify" EntityType="UmbracoModel.Store.umbracoUser2NodeNotify" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="umbracoUser2NodePermission" EntityType="UmbracoModel.Store.umbracoUser2NodePermission" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="umbracoUserLogins" EntityType="UmbracoModel.Store.umbracoUserLogins" store:Type="Tables" store:Schema="dbo" store:Name="umbracoUserLogins">
+            <DefiningQuery>SELECT 
+      [umbracoUserLogins].[contextID] AS [contextID], 
+      [umbracoUserLogins].[userID] AS [userID], 
+      [umbracoUserLogins].[timeout] AS [timeout]
+      FROM [dbo].[umbracoUserLogins] AS [umbracoUserLogins]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="umbracoUserType" EntityType="UmbracoModel.Store.umbracoUserType" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="cmsTags_cmsTagRelationship" Association="UmbracoModel.Store.cmsTags_cmsTagRelationship">
+            <End Role="cmsTags" EntitySet="cmsTags" />
+            <End Role="cmsTagRelationship" EntitySet="cmsTagRelationship" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsContent_umbracoNode" Association="UmbracoModel.Store.FK_cmsContent_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="cmsContent" EntitySet="cmsContent" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsContentType_umbracoNode" Association="UmbracoModel.Store.FK_cmsContentType_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="cmsContentType" EntitySet="cmsContentType" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsDataType_umbracoNode" Association="UmbracoModel.Store.FK_cmsDataType_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="cmsDataType" EntitySet="cmsDataType" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsDocument_umbracoNode" Association="UmbracoModel.Store.FK_cmsDocument_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="cmsDocument" EntitySet="cmsDocument" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsDocumentType_umbracoNode" Association="UmbracoModel.Store.FK_cmsDocumentType_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="cmsDocumentType" EntitySet="cmsDocumentType" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsMacroProperty_cmsMacro" Association="UmbracoModel.Store.FK_cmsMacroProperty_cmsMacro">
+            <End Role="cmsMacro" EntitySet="cmsMacro" />
+            <End Role="cmsMacroProperty" EntitySet="cmsMacroProperty" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsMember_umbracoNode" Association="UmbracoModel.Store.FK_cmsMember_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="cmsMember" EntitySet="cmsMember" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsMember2MemberGroup_cmsMember" Association="UmbracoModel.Store.FK_cmsMember2MemberGroup_cmsMember">
+            <End Role="cmsMember" EntitySet="cmsMember" />
+            <End Role="cmsMember2MemberGroup" EntitySet="cmsMember2MemberGroup" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsMember2MemberGroup_umbracoNode" Association="UmbracoModel.Store.FK_cmsMember2MemberGroup_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="cmsMember2MemberGroup" EntitySet="cmsMember2MemberGroup" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsMemberType_umbracoNode" Association="UmbracoModel.Store.FK_cmsMemberType_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="cmsMemberType" EntitySet="cmsMemberType" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsPropertyData_cmsPropertyType" Association="UmbracoModel.Store.FK_cmsPropertyData_cmsPropertyType">
+            <End Role="cmsPropertyType" EntitySet="cmsPropertyType" />
+            <End Role="cmsPropertyData" EntitySet="cmsPropertyData" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsPropertyData_umbracoNode" Association="UmbracoModel.Store.FK_cmsPropertyData_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="cmsPropertyData" EntitySet="cmsPropertyData" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsPropertyType_cmsTab" Association="UmbracoModel.Store.FK_cmsPropertyType_cmsTab">
+            <End Role="cmsTab" EntitySet="cmsTab" />
+            <End Role="cmsPropertyType" EntitySet="cmsPropertyType" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsStylesheet_umbracoNode" Association="UmbracoModel.Store.FK_cmsStylesheet_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="cmsStylesheet" EntitySet="cmsStylesheet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsStylesheetProperty_umbracoNode" Association="UmbracoModel.Store.FK_cmsStylesheetProperty_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="cmsStylesheetProperty" EntitySet="cmsStylesheetProperty" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsTask_cmsTaskType" Association="UmbracoModel.Store.FK_cmsTask_cmsTaskType">
+            <End Role="cmsTaskType" EntitySet="cmsTaskType" />
+            <End Role="cmsTask" EntitySet="cmsTask" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsTask_umbracoNode" Association="UmbracoModel.Store.FK_cmsTask_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="cmsTask" EntitySet="cmsTask" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsTask_umbracoUser" Association="UmbracoModel.Store.FK_cmsTask_umbracoUser">
+            <End Role="umbracoUser" EntitySet="umbracoUser" />
+            <End Role="cmsTask" EntitySet="cmsTask" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsTask_umbracoUser1" Association="UmbracoModel.Store.FK_cmsTask_umbracoUser1">
+            <End Role="umbracoUser" EntitySet="umbracoUser" />
+            <End Role="cmsTask" EntitySet="cmsTask" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsTemplate_umbracoNode" Association="UmbracoModel.Store.FK_cmsTemplate_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="cmsTemplate" EntitySet="cmsTemplate" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoDomains_umbracoNode" Association="UmbracoModel.Store.FK_umbracoDomains_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="umbracoDomains" EntitySet="umbracoDomains" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoMacroProperty_umbracoMacroPropertyType" Association="UmbracoModel.Store.FK_umbracoMacroProperty_umbracoMacroPropertyType">
+            <End Role="cmsMacroPropertyType" EntitySet="cmsMacroPropertyType" />
+            <End Role="cmsMacroProperty" EntitySet="cmsMacroProperty" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoNode_umbracoNode" Association="UmbracoModel.Store.FK_umbracoNode_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="umbracoNode1" EntitySet="umbracoNode" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoRelation_umbracoNode" Association="UmbracoModel.Store.FK_umbracoRelation_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="umbracoRelation" EntitySet="umbracoRelation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoRelation_umbracoNode1" Association="UmbracoModel.Store.FK_umbracoRelation_umbracoNode1">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="umbracoRelation" EntitySet="umbracoRelation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoRelation_umbracoRelationType" Association="UmbracoModel.Store.FK_umbracoRelation_umbracoRelationType">
+            <End Role="umbracoRelationType" EntitySet="umbracoRelationType" />
+            <End Role="umbracoRelation" EntitySet="umbracoRelation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoUser2app_umbracoUser" Association="UmbracoModel.Store.FK_umbracoUser2app_umbracoUser">
+            <End Role="umbracoUser" EntitySet="umbracoUser" />
+            <End Role="umbracoUser2app" EntitySet="umbracoUser2app" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoUser2NodeNotify_umbracoNode" Association="UmbracoModel.Store.FK_umbracoUser2NodeNotify_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="umbracoUser2NodeNotify" EntitySet="umbracoUser2NodeNotify" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoUser2NodeNotify_umbracoUser" Association="UmbracoModel.Store.FK_umbracoUser2NodeNotify_umbracoUser">
+            <End Role="umbracoUser" EntitySet="umbracoUser" />
+            <End Role="umbracoUser2NodeNotify" EntitySet="umbracoUser2NodeNotify" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoUser2NodePermission_umbracoNode" Association="UmbracoModel.Store.FK_umbracoUser2NodePermission_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="umbracoUser2NodePermission" EntitySet="umbracoUser2NodePermission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoUser2NodePermission_umbracoUser" Association="UmbracoModel.Store.FK_umbracoUser2NodePermission_umbracoUser">
+            <End Role="umbracoUser" EntitySet="umbracoUser" />
+            <End Role="umbracoUser2NodePermission" EntitySet="umbracoUser2NodePermission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_user_userType" Association="UmbracoModel.Store.FK_user_userType">
+            <End Role="umbracoUserType" EntitySet="umbracoUserType" />
+            <End Role="umbracoUser" EntitySet="umbracoUser" />
+          </AssociationSet>
+          <AssociationSet Name="umbracoNode_cmsTagRelationship" Association="UmbracoModel.Store.umbracoNode_cmsTagRelationship">
+            <End Role="umbracoNode" EntitySet="umbracoNode" />
+            <End Role="cmsTagRelationship" EntitySet="cmsTagRelationship" />
+          </AssociationSet>
+        </EntityContainer>
+        <!--Errors Found During Generation:
+      warning 6035: The relationship 'FK_cmsContentVersion_cmsContent' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'FK_cmsContentXml_cmsContent' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'FK_cmsDocument_cmsContent' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'FK_cmsMember_cmsContent' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'FK_cmsPreviewXml_cmsContent' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      -->
+        <EntityType Name="cmsContent">
+          <Key>
+            <PropertyRef Name="pk" />
+          </Key>
+          <Property Name="pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="nodeId" Type="int" Nullable="false" />
+          <Property Name="contentType" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6035: The relationship 'FK_cmsContentTypeAllowedContentType_cmsContentType' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'FK_cmsContentTypeAllowedContentType_cmsContentType1' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'FK_cmsDocumentType_cmsContentType' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'FK_cmsMemberType_cmsContentType' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'FK_cmsPropertyType_cmsContentType' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'FK_cmsTab_cmsContentType' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      -->
+        <EntityType Name="cmsContentType">
+          <Key>
+            <PropertyRef Name="pk" />
+          </Key>
+          <Property Name="pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="nodeId" Type="int" Nullable="false" />
+          <Property Name="alias" Type="nvarchar" MaxLength="255" />
+          <Property Name="icon" Type="nvarchar" MaxLength="255" />
+          <Property Name="thumbnail" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="description" Type="nvarchar" MaxLength="1500" />
+          <Property Name="masterContentType" Type="int" />
+        </EntityType>
+        <EntityType Name="cmsContentTypeAllowedContentType">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="AllowedId" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="AllowedId" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6035: The relationship 'FK_cmsPreviewXml_cmsContentVersion' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      -->
+        <EntityType Name="cmsContentVersion">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ContentId" Type="int" Nullable="false" />
+          <Property Name="VersionId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="VersionDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cmsContentXml">
+          <Key>
+            <PropertyRef Name="nodeId" />
+          </Key>
+          <Property Name="nodeId" Type="int" Nullable="false" />
+          <Property Name="xml" Type="ntext" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6035: The relationship 'FK_cmsDataTypePreValues_cmsDataType' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'FK_cmsPropertyType_cmsDataType' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      -->
+        <EntityType Name="cmsDataType">
+          <Key>
+            <PropertyRef Name="pk" />
+          </Key>
+          <Property Name="pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="nodeId" Type="int" Nullable="false" />
+          <Property Name="controlId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="dbType" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="cmsDataTypePreValues">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="datatypeNodeId" Type="int" Nullable="false" />
+          <Property Name="value" Type="nvarchar" MaxLength="2500" />
+          <Property Name="sortorder" Type="int" Nullable="false" />
+          <Property Name="alias" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6035: The relationship 'FK_cmsLanguageText_cmsDictionary' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      -->
+        <EntityType Name="cmsDictionary">
+          <Key>
+            <PropertyRef Name="pk" />
+          </Key>
+          <Property Name="pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="parent" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="key" Type="nvarchar" Nullable="false" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="cmsDocument">
+          <Key>
+            <PropertyRef Name="versionId" />
+          </Key>
+          <Property Name="nodeId" Type="int" Nullable="false" />
+          <Property Name="published" Type="bit" Nullable="false" />
+          <Property Name="documentUser" Type="int" Nullable="false" />
+          <Property Name="versionId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="text" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="releaseDate" Type="datetime" />
+          <Property Name="expireDate" Type="datetime" />
+          <Property Name="updateDate" Type="datetime" Nullable="false" />
+          <Property Name="templateId" Type="int" />
+          <Property Name="alias" Type="nvarchar" MaxLength="255" />
+          <Property Name="newest" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cmsDocumentType">
+          <Key>
+            <PropertyRef Name="contentTypeNodeId" />
+            <PropertyRef Name="templateNodeId" />
+          </Key>
+          <Property Name="contentTypeNodeId" Type="int" Nullable="false" />
+          <Property Name="templateNodeId" Type="int" Nullable="false" />
+          <Property Name="IsDefault" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cmsLanguageText">
+          <Key>
+            <PropertyRef Name="pk" />
+          </Key>
+          <Property Name="pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="languageId" Type="int" Nullable="false" />
+          <Property Name="UniqueId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="value" Type="nvarchar" Nullable="false" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="cmsMacro">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="macroUseInEditor" Type="bit" Nullable="false" />
+          <Property Name="macroRefreshRate" Type="int" Nullable="false" />
+          <Property Name="macroAlias" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="macroName" Type="nvarchar" MaxLength="255" />
+          <Property Name="macroScriptType" Type="nvarchar" MaxLength="255" />
+          <Property Name="macroScriptAssembly" Type="nvarchar" MaxLength="255" />
+          <Property Name="macroXSLT" Type="nvarchar" MaxLength="255" />
+          <Property Name="macroCacheByPage" Type="bit" Nullable="false" />
+          <Property Name="macroCachePersonalized" Type="bit" Nullable="false" />
+          <Property Name="macroDontRender" Type="bit" Nullable="false" />
+          <Property Name="macroPython" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="cmsMacroProperty">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="macroPropertyHidden" Type="bit" Nullable="false" />
+          <Property Name="macroPropertyType" Type="smallint" Nullable="false" />
+          <Property Name="macro" Type="int" Nullable="false" />
+          <Property Name="macroPropertySortOrder" Type="tinyint" Nullable="false" />
+          <Property Name="macroPropertyAlias" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="macroPropertyName" Type="nvarchar" Nullable="false" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="cmsMacroPropertyType">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="macroPropertyTypeAlias" Type="nvarchar" MaxLength="50" />
+          <Property Name="macroPropertyTypeRenderAssembly" Type="nvarchar" MaxLength="255" />
+          <Property Name="macroPropertyTypeRenderType" Type="nvarchar" MaxLength="255" />
+          <Property Name="macroPropertyTypeBaseType" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="cmsMember">
+          <Key>
+            <PropertyRef Name="nodeId" />
+          </Key>
+          <Property Name="nodeId" Type="int" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="1000" />
+          <Property Name="LoginName" Type="nvarchar" Nullable="false" MaxLength="1000" />
+          <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="cmsMember2MemberGroup">
+          <Key>
+            <PropertyRef Name="Member" />
+            <PropertyRef Name="MemberGroup" />
+          </Key>
+          <Property Name="Member" Type="int" Nullable="false" />
+          <Property Name="MemberGroup" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cmsMemberType">
+          <Key>
+            <PropertyRef Name="pk" />
+          </Key>
+          <Property Name="pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NodeId" Type="int" Nullable="false" />
+          <Property Name="propertytypeId" Type="int" Nullable="false" />
+          <Property Name="memberCanEdit" Type="bit" Nullable="false" />
+          <Property Name="viewOnProfile" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cmsPreviewXml">
+          <Key>
+            <PropertyRef Name="nodeId" />
+            <PropertyRef Name="versionId" />
+          </Key>
+          <Property Name="nodeId" Type="int" Nullable="false" />
+          <Property Name="versionId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="timestamp" Type="datetime" Nullable="false" />
+          <Property Name="xml" Type="ntext" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cmsPropertyData">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="contentNodeId" Type="int" Nullable="false" />
+          <Property Name="versionId" Type="uniqueidentifier" />
+          <Property Name="propertytypeid" Type="int" Nullable="false" />
+          <Property Name="dataInt" Type="int" />
+          <Property Name="dataDate" Type="datetime" />
+          <Property Name="dataNvarchar" Type="nvarchar" MaxLength="500" />
+          <Property Name="dataNtext" Type="ntext" />
+        </EntityType>
+        <EntityType Name="cmsPropertyType">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="dataTypeId" Type="int" Nullable="false" />
+          <Property Name="contentTypeId" Type="int" Nullable="false" />
+          <Property Name="tabId" Type="int" />
+          <Property Name="Alias" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="helpText" Type="nvarchar" MaxLength="1000" />
+          <Property Name="sortOrder" Type="int" Nullable="false" />
+          <Property Name="mandatory" Type="bit" Nullable="false" />
+          <Property Name="validationRegExp" Type="nvarchar" MaxLength="255" />
+          <Property Name="Description" Type="nvarchar" MaxLength="2000" />
+        </EntityType>
+        <EntityType Name="cmsStylesheet">
+          <Key>
+            <PropertyRef Name="nodeId" />
+          </Key>
+          <Property Name="nodeId" Type="int" Nullable="false" />
+          <Property Name="filename" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="content" Type="ntext" />
+        </EntityType>
+        <EntityType Name="cmsStylesheetProperty">
+          <Key>
+            <PropertyRef Name="nodeId" />
+          </Key>
+          <Property Name="nodeId" Type="int" Nullable="false" />
+          <Property Name="stylesheetPropertyEditor" Type="bit" />
+          <Property Name="stylesheetPropertyAlias" Type="nvarchar" MaxLength="50" />
+          <Property Name="stylesheetPropertyValue" Type="nvarchar" MaxLength="400" />
+        </EntityType>
+        <EntityType Name="cmsTab">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="contenttypeNodeId" Type="int" Nullable="false" />
+          <Property Name="text" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="sortorder" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cmsTagRelationship">
+          <Key>
+            <PropertyRef Name="nodeId" />
+            <PropertyRef Name="tagId" />
+          </Key>
+          <Property Name="nodeId" Type="int" Nullable="false" />
+          <Property Name="tagId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cmsTags">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="tag" Type="varchar" MaxLength="200" />
+          <Property Name="parentId" Type="int" />
+          <Property Name="group" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="cmsTask">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="closed" Type="bit" Nullable="false" />
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="taskTypeId" Type="tinyint" Nullable="false" />
+          <Property Name="nodeId" Type="int" Nullable="false" />
+          <Property Name="parentUserId" Type="int" Nullable="false" />
+          <Property Name="userId" Type="int" Nullable="false" />
+          <Property Name="DateTime" Type="datetime" Nullable="false" />
+          <Property Name="Comment" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="cmsTaskType">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="tinyint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="alias" Type="nvarchar" Nullable="false" MaxLength="255" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6035: The relationship 'FK_cmsDocument_cmsTemplate' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'FK_cmsDocumentType_cmsTemplate' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'FK_cmsTemplate_cmsTemplate' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      -->
+        <EntityType Name="cmsTemplate">
+          <Key>
+            <PropertyRef Name="pk" />
+          </Key>
+          <Property Name="pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="nodeId" Type="int" Nullable="false" />
+          <Property Name="master" Type="int" />
+          <Property Name="alias" Type="nvarchar" MaxLength="100" />
+          <Property Name="design" Type="ntext" Nullable="false" />
+        </EntityType>
+        <EntityType Name="umbracoDomains">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="domainDefaultLanguage" Type="int" />
+          <Property Name="domainRootStructureID" Type="int" />
+          <Property Name="domainName" Type="nvarchar" Nullable="false" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="umbracoLanguage">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="languageISOCode" Type="nvarchar" MaxLength="10" />
+          <Property Name="languageCultureName" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="umbracoLog">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="userId" Type="int" Nullable="false" />
+          <Property Name="NodeId" Type="int" Nullable="false" />
+          <Property Name="Datestamp" Type="datetime" Nullable="false" />
+          <Property Name="logHeader" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="logComment" Type="nvarchar" />
+        </EntityType>
+        <EntityType Name="umbracoNode">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="trashed" Type="bit" Nullable="false" />
+          <Property Name="parentID" Type="int" Nullable="false" />
+          <Property Name="nodeUser" Type="int" />
+          <Property Name="level" Type="smallint" Nullable="false" />
+          <Property Name="path" Type="nvarchar" Nullable="false" MaxLength="150" />
+          <Property Name="sortOrder" Type="int" Nullable="false" />
+          <Property Name="uniqueID" Type="uniqueidentifier" />
+          <Property Name="text" Type="nvarchar" MaxLength="255" />
+          <Property Name="nodeObjectType" Type="uniqueidentifier" />
+          <Property Name="createDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="umbracoRelation">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="parentId" Type="int" Nullable="false" />
+          <Property Name="childId" Type="int" Nullable="false" />
+          <Property Name="relType" Type="int" Nullable="false" />
+          <Property Name="datetime" Type="datetime" Nullable="false" />
+          <Property Name="comment" Type="nvarchar" Nullable="false" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="umbracoRelationType">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="dual" Type="bit" Nullable="false" />
+          <Property Name="parentObjectType" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="childObjectType" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="alias" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="umbracoUser">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="userDisabled" Type="bit" Nullable="false" />
+          <Property Name="userNoConsole" Type="bit" Nullable="false" />
+          <Property Name="userType" Type="smallint" Nullable="false" />
+          <Property Name="startStructureID" Type="int" Nullable="false" />
+          <Property Name="startMediaID" Type="int" />
+          <Property Name="userName" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="userLogin" Type="nvarchar" Nullable="false" MaxLength="125" />
+          <Property Name="userPassword" Type="nvarchar" Nullable="false" MaxLength="125" />
+          <Property Name="userEmail" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="userDefaultPermissions" Type="nvarchar" MaxLength="50" />
+          <Property Name="userLanguage" Type="nvarchar" MaxLength="10" />
+          <Property Name="defaultToLiveEditing" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="umbracoUser2app">
+          <Key>
+            <PropertyRef Name="user" />
+            <PropertyRef Name="app" />
+          </Key>
+          <Property Name="user" Type="int" Nullable="false" />
+          <Property Name="app" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="umbracoUser2NodeNotify">
+          <Key>
+            <PropertyRef Name="userId" />
+            <PropertyRef Name="nodeId" />
+            <PropertyRef Name="action" />
+          </Key>
+          <Property Name="userId" Type="int" Nullable="false" />
+          <Property Name="nodeId" Type="int" Nullable="false" />
+          <Property Name="action" Type="char" Nullable="false" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="umbracoUser2NodePermission">
+          <Key>
+            <PropertyRef Name="userId" />
+            <PropertyRef Name="nodeId" />
+            <PropertyRef Name="permission" />
+          </Key>
+          <Property Name="userId" Type="int" Nullable="false" />
+          <Property Name="nodeId" Type="int" Nullable="false" />
+          <Property Name="permission" Type="char" Nullable="false" MaxLength="1" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'TTNQ.dbo.umbracoUserLogins' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="umbracoUserLogins">
+          <Key>
+            <PropertyRef Name="contextID" />
+            <PropertyRef Name="userID" />
+            <PropertyRef Name="timeout" />
+          </Key>
+          <Property Name="contextID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="userID" Type="int" Nullable="false" />
+          <Property Name="timeout" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="umbracoUserType">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="userTypeAlias" Type="nvarchar" MaxLength="50" />
+          <Property Name="userTypeName" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="userTypeDefaultPermissions" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="cmsTags_cmsTagRelationship">
+          <End Role="cmsTags" Type="UmbracoModel.Store.cmsTags" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="cmsTagRelationship" Type="UmbracoModel.Store.cmsTagRelationship" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cmsTags">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsTagRelationship">
+              <PropertyRef Name="tagId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsContent_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="cmsContent" Type="UmbracoModel.Store.cmsContent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsContent">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsContentType_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="cmsContentType" Type="UmbracoModel.Store.cmsContentType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsContentType">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsDataType_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="cmsDataType" Type="UmbracoModel.Store.cmsDataType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsDataType">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsDocument_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="cmsDocument" Type="UmbracoModel.Store.cmsDocument" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsDocument">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsDocumentType_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="cmsDocumentType" Type="UmbracoModel.Store.cmsDocumentType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsDocumentType">
+              <PropertyRef Name="contentTypeNodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsMacroProperty_cmsMacro">
+          <End Role="cmsMacro" Type="UmbracoModel.Store.cmsMacro" Multiplicity="1" />
+          <End Role="cmsMacroProperty" Type="UmbracoModel.Store.cmsMacroProperty" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cmsMacro">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsMacroProperty">
+              <PropertyRef Name="macro" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsMember_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="cmsMember" Type="UmbracoModel.Store.cmsMember" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsMember">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsMember2MemberGroup_cmsMember">
+          <End Role="cmsMember" Type="UmbracoModel.Store.cmsMember" Multiplicity="1" />
+          <End Role="cmsMember2MemberGroup" Type="UmbracoModel.Store.cmsMember2MemberGroup" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cmsMember">
+              <PropertyRef Name="nodeId" />
+            </Principal>
+            <Dependent Role="cmsMember2MemberGroup">
+              <PropertyRef Name="Member" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsMember2MemberGroup_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="cmsMember2MemberGroup" Type="UmbracoModel.Store.cmsMember2MemberGroup" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsMember2MemberGroup">
+              <PropertyRef Name="MemberGroup" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsMemberType_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="cmsMemberType" Type="UmbracoModel.Store.cmsMemberType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsMemberType">
+              <PropertyRef Name="NodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsPropertyData_cmsPropertyType">
+          <End Role="cmsPropertyType" Type="UmbracoModel.Store.cmsPropertyType" Multiplicity="1" />
+          <End Role="cmsPropertyData" Type="UmbracoModel.Store.cmsPropertyData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cmsPropertyType">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsPropertyData">
+              <PropertyRef Name="propertytypeid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsPropertyData_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="cmsPropertyData" Type="UmbracoModel.Store.cmsPropertyData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsPropertyData">
+              <PropertyRef Name="contentNodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsPropertyType_cmsTab">
+          <End Role="cmsTab" Type="UmbracoModel.Store.cmsTab" Multiplicity="0..1" />
+          <End Role="cmsPropertyType" Type="UmbracoModel.Store.cmsPropertyType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cmsTab">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsPropertyType">
+              <PropertyRef Name="tabId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsStylesheet_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="cmsStylesheet" Type="UmbracoModel.Store.cmsStylesheet" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsStylesheet">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsStylesheetProperty_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="cmsStylesheetProperty" Type="UmbracoModel.Store.cmsStylesheetProperty" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsStylesheetProperty">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsTask_cmsTaskType">
+          <End Role="cmsTaskType" Type="UmbracoModel.Store.cmsTaskType" Multiplicity="1" />
+          <End Role="cmsTask" Type="UmbracoModel.Store.cmsTask" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cmsTaskType">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsTask">
+              <PropertyRef Name="taskTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsTask_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="cmsTask" Type="UmbracoModel.Store.cmsTask" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsTask">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsTask_umbracoUser">
+          <End Role="umbracoUser" Type="UmbracoModel.Store.umbracoUser" Multiplicity="1" />
+          <End Role="cmsTask" Type="UmbracoModel.Store.cmsTask" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoUser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsTask">
+              <PropertyRef Name="parentUserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsTask_umbracoUser1">
+          <End Role="umbracoUser" Type="UmbracoModel.Store.umbracoUser" Multiplicity="1" />
+          <End Role="cmsTask" Type="UmbracoModel.Store.cmsTask" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoUser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsTask">
+              <PropertyRef Name="userId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsTemplate_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="cmsTemplate" Type="UmbracoModel.Store.cmsTemplate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsTemplate">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoDomains_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="0..1" />
+          <End Role="umbracoDomains" Type="UmbracoModel.Store.umbracoDomains" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoDomains">
+              <PropertyRef Name="domainRootStructureID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoMacroProperty_umbracoMacroPropertyType">
+          <End Role="cmsMacroPropertyType" Type="UmbracoModel.Store.cmsMacroPropertyType" Multiplicity="1" />
+          <End Role="cmsMacroProperty" Type="UmbracoModel.Store.cmsMacroProperty" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cmsMacroPropertyType">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsMacroProperty">
+              <PropertyRef Name="macroPropertyType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoNode_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="umbracoNode1" Type="UmbracoModel.Store.umbracoNode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoNode1">
+              <PropertyRef Name="parentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoRelation_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="umbracoRelation" Type="UmbracoModel.Store.umbracoRelation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoRelation">
+              <PropertyRef Name="parentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoRelation_umbracoNode1">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="umbracoRelation" Type="UmbracoModel.Store.umbracoRelation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoRelation">
+              <PropertyRef Name="childId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoRelation_umbracoRelationType">
+          <End Role="umbracoRelationType" Type="UmbracoModel.Store.umbracoRelationType" Multiplicity="1" />
+          <End Role="umbracoRelation" Type="UmbracoModel.Store.umbracoRelation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoRelationType">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoRelation">
+              <PropertyRef Name="relType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoUser2app_umbracoUser">
+          <End Role="umbracoUser" Type="UmbracoModel.Store.umbracoUser" Multiplicity="1" />
+          <End Role="umbracoUser2app" Type="UmbracoModel.Store.umbracoUser2app" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoUser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoUser2app">
+              <PropertyRef Name="user" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoUser2NodeNotify_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="umbracoUser2NodeNotify" Type="UmbracoModel.Store.umbracoUser2NodeNotify" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoUser2NodeNotify">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoUser2NodeNotify_umbracoUser">
+          <End Role="umbracoUser" Type="UmbracoModel.Store.umbracoUser" Multiplicity="1" />
+          <End Role="umbracoUser2NodeNotify" Type="UmbracoModel.Store.umbracoUser2NodeNotify" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoUser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoUser2NodeNotify">
+              <PropertyRef Name="userId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoUser2NodePermission_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1" />
+          <End Role="umbracoUser2NodePermission" Type="UmbracoModel.Store.umbracoUser2NodePermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoUser2NodePermission">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoUser2NodePermission_umbracoUser">
+          <End Role="umbracoUser" Type="UmbracoModel.Store.umbracoUser" Multiplicity="1" />
+          <End Role="umbracoUser2NodePermission" Type="UmbracoModel.Store.umbracoUser2NodePermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoUser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoUser2NodePermission">
+              <PropertyRef Name="userId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_user_userType">
+          <End Role="umbracoUserType" Type="UmbracoModel.Store.umbracoUserType" Multiplicity="1" />
+          <End Role="umbracoUser" Type="UmbracoModel.Store.umbracoUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoUserType">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoUser">
+              <PropertyRef Name="userType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="umbracoNode_cmsTagRelationship">
+          <End Role="umbracoNode" Type="UmbracoModel.Store.umbracoNode" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="cmsTagRelationship" Type="UmbracoModel.Store.cmsTagRelationship" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsTagRelationship">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="UmbracoModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="UmbracoEntities" annotation:LazyLoadingEnabled="true" a:TypeAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
+          <EntitySet Name="cmsContents" EntityType="UmbracoModel.cmsContent" />
+          <EntitySet Name="cmsContentTypes" EntityType="UmbracoModel.cmsContentType" />
+          <EntitySet Name="cmsContentTypeAllowedContentTypes" EntityType="UmbracoModel.cmsContentTypeAllowedContentType" />
+          <EntitySet Name="cmsContentVersions" EntityType="UmbracoModel.cmsContentVersion" />
+          <EntitySet Name="cmsContentXmls" EntityType="UmbracoModel.cmsContentXml" />
+          <EntitySet Name="cmsDataTypes" EntityType="UmbracoModel.cmsDataType" />
+          <EntitySet Name="cmsDataTypePreValues" EntityType="UmbracoModel.cmsDataTypePreValue" />
+          <EntitySet Name="cmsDictionaries" EntityType="UmbracoModel.cmsDictionary" />
+          <EntitySet Name="cmsDocuments" EntityType="UmbracoModel.cmsDocument" />
+          <EntitySet Name="cmsDocumentTypes" EntityType="UmbracoModel.cmsDocumentType" />
+          <EntitySet Name="cmsLanguageTexts" EntityType="UmbracoModel.cmsLanguageText" />
+          <EntitySet Name="cmsMacroes" EntityType="UmbracoModel.cmsMacro" />
+          <EntitySet Name="cmsMacroProperties" EntityType="UmbracoModel.cmsMacroProperty" />
+          <EntitySet Name="cmsMacroPropertyTypes" EntityType="UmbracoModel.cmsMacroPropertyType" />
+          <EntitySet Name="cmsMembers" EntityType="UmbracoModel.cmsMember" />
+          <EntitySet Name="cmsMemberTypes" EntityType="UmbracoModel.cmsMemberType" />
+          <EntitySet Name="cmsPreviewXmls" EntityType="UmbracoModel.cmsPreviewXml" />
+          <EntitySet Name="cmsPropertyDatas" EntityType="UmbracoModel.cmsPropertyData" />
+          <EntitySet Name="cmsPropertyTypes" EntityType="UmbracoModel.cmsPropertyType" />
+          <EntitySet Name="cmsStylesheets" EntityType="UmbracoModel.cmsStylesheet" />
+          <EntitySet Name="cmsStylesheetProperties" EntityType="UmbracoModel.cmsStylesheetProperty" />
+          <EntitySet Name="cmsTabs" EntityType="UmbracoModel.cmsTab" />
+          <EntitySet Name="cmsTags" EntityType="UmbracoModel.cmsTag" />
+          <EntitySet Name="cmsTasks" EntityType="UmbracoModel.cmsTask" />
+          <EntitySet Name="cmsTaskTypes" EntityType="UmbracoModel.cmsTaskType" />
+          <EntitySet Name="cmsTemplates" EntityType="UmbracoModel.cmsTemplate" />
+          <EntitySet Name="umbracoDomains" EntityType="UmbracoModel.umbracoDomain" />
+          <EntitySet Name="umbracoLanguages" EntityType="UmbracoModel.umbracoLanguage" />
+          <EntitySet Name="umbracoLogs" EntityType="UmbracoModel.umbracoLog" />
+          <EntitySet Name="umbracoNodes" EntityType="UmbracoModel.umbracoNode" />
+          <EntitySet Name="umbracoRelations" EntityType="UmbracoModel.umbracoRelation" />
+          <EntitySet Name="umbracoRelationTypes" EntityType="UmbracoModel.umbracoRelationType" />
+          <EntitySet Name="umbracoUsers" EntityType="UmbracoModel.umbracoUser" />
+          <EntitySet Name="umbracoUser2app" EntityType="UmbracoModel.umbracoUser2app" />
+          <EntitySet Name="umbracoUser2NodeNotify" EntityType="UmbracoModel.umbracoUser2NodeNotify" />
+          <EntitySet Name="umbracoUser2NodePermission" EntityType="UmbracoModel.umbracoUser2NodePermission" />
+          <EntitySet Name="umbracoUserLogins" EntityType="UmbracoModel.umbracoUserLogin" />
+          <EntitySet Name="umbracoUserTypes" EntityType="UmbracoModel.umbracoUserType" />
+          <AssociationSet Name="FK_cmsContent_umbracoNode" Association="UmbracoModel.FK_cmsContent_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="cmsContent" EntitySet="cmsContents" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsContentType_umbracoNode" Association="UmbracoModel.FK_cmsContentType_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="cmsContentType" EntitySet="cmsContentTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsDataType_umbracoNode" Association="UmbracoModel.FK_cmsDataType_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="cmsDataType" EntitySet="cmsDataTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsDocument_umbracoNode" Association="UmbracoModel.FK_cmsDocument_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="cmsDocument" EntitySet="cmsDocuments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsDocumentType_umbracoNode" Association="UmbracoModel.FK_cmsDocumentType_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="cmsDocumentType" EntitySet="cmsDocumentTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsMacroProperty_cmsMacro" Association="UmbracoModel.FK_cmsMacroProperty_cmsMacro">
+            <End Role="cmsMacro" EntitySet="cmsMacroes" />
+            <End Role="cmsMacroProperty" EntitySet="cmsMacroProperties" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoMacroProperty_umbracoMacroPropertyType" Association="UmbracoModel.FK_umbracoMacroProperty_umbracoMacroPropertyType">
+            <End Role="cmsMacroPropertyType" EntitySet="cmsMacroPropertyTypes" />
+            <End Role="cmsMacroProperty" EntitySet="cmsMacroProperties" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsMember_umbracoNode" Association="UmbracoModel.FK_cmsMember_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="cmsMember" EntitySet="cmsMembers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsMemberType_umbracoNode" Association="UmbracoModel.FK_cmsMemberType_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="cmsMemberType" EntitySet="cmsMemberTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsPropertyData_cmsPropertyType" Association="UmbracoModel.FK_cmsPropertyData_cmsPropertyType">
+            <End Role="cmsPropertyType" EntitySet="cmsPropertyTypes" />
+            <End Role="cmsPropertyData" EntitySet="cmsPropertyDatas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsPropertyData_umbracoNode" Association="UmbracoModel.FK_cmsPropertyData_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="cmsPropertyData" EntitySet="cmsPropertyDatas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsPropertyType_cmsTab" Association="UmbracoModel.FK_cmsPropertyType_cmsTab">
+            <End Role="cmsTab" EntitySet="cmsTabs" />
+            <End Role="cmsPropertyType" EntitySet="cmsPropertyTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsStylesheet_umbracoNode" Association="UmbracoModel.FK_cmsStylesheet_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="cmsStylesheet" EntitySet="cmsStylesheets" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsStylesheetProperty_umbracoNode" Association="UmbracoModel.FK_cmsStylesheetProperty_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="cmsStylesheetProperty" EntitySet="cmsStylesheetProperties" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsTask_cmsTaskType" Association="UmbracoModel.FK_cmsTask_cmsTaskType">
+            <End Role="cmsTaskType" EntitySet="cmsTaskTypes" />
+            <End Role="cmsTask" EntitySet="cmsTasks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsTask_umbracoNode" Association="UmbracoModel.FK_cmsTask_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="cmsTask" EntitySet="cmsTasks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsTask_umbracoUser" Association="UmbracoModel.FK_cmsTask_umbracoUser">
+            <End Role="umbracoUser" EntitySet="umbracoUsers" />
+            <End Role="cmsTask" EntitySet="cmsTasks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsTask_umbracoUser1" Association="UmbracoModel.FK_cmsTask_umbracoUser1">
+            <End Role="umbracoUser" EntitySet="umbracoUsers" />
+            <End Role="cmsTask" EntitySet="cmsTasks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_cmsTemplate_umbracoNode" Association="UmbracoModel.FK_cmsTemplate_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="cmsTemplate" EntitySet="cmsTemplates" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoDomains_umbracoNode" Association="UmbracoModel.FK_umbracoDomains_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="umbracoDomains" EntitySet="umbracoDomains" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoNode_umbracoNode" Association="UmbracoModel.FK_umbracoNode_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="umbracoNode1" EntitySet="umbracoNodes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoRelation_umbracoNode" Association="UmbracoModel.FK_umbracoRelation_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="umbracoRelation" EntitySet="umbracoRelations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoRelation_umbracoNode1" Association="UmbracoModel.FK_umbracoRelation_umbracoNode1">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="umbracoRelation" EntitySet="umbracoRelations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoUser2NodeNotify_umbracoNode" Association="UmbracoModel.FK_umbracoUser2NodeNotify_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="umbracoUser2NodeNotify" EntitySet="umbracoUser2NodeNotify" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoUser2NodePermission_umbracoNode" Association="UmbracoModel.FK_umbracoUser2NodePermission_umbracoNode">
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+            <End Role="umbracoUser2NodePermission" EntitySet="umbracoUser2NodePermission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoRelation_umbracoRelationType" Association="UmbracoModel.FK_umbracoRelation_umbracoRelationType">
+            <End Role="umbracoRelationType" EntitySet="umbracoRelationTypes" />
+            <End Role="umbracoRelation" EntitySet="umbracoRelations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoUser2app_umbracoUser" Association="UmbracoModel.FK_umbracoUser2app_umbracoUser">
+            <End Role="umbracoUser" EntitySet="umbracoUsers" />
+            <End Role="umbracoUser2app" EntitySet="umbracoUser2app" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoUser2NodeNotify_umbracoUser" Association="UmbracoModel.FK_umbracoUser2NodeNotify_umbracoUser">
+            <End Role="umbracoUser" EntitySet="umbracoUsers" />
+            <End Role="umbracoUser2NodeNotify" EntitySet="umbracoUser2NodeNotify" />
+          </AssociationSet>
+          <AssociationSet Name="FK_umbracoUser2NodePermission_umbracoUser" Association="UmbracoModel.FK_umbracoUser2NodePermission_umbracoUser">
+            <End Role="umbracoUser" EntitySet="umbracoUsers" />
+            <End Role="umbracoUser2NodePermission" EntitySet="umbracoUser2NodePermission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_user_userType" Association="UmbracoModel.FK_user_userType">
+            <End Role="umbracoUserType" EntitySet="umbracoUserTypes" />
+            <End Role="umbracoUser" EntitySet="umbracoUsers" />
+          </AssociationSet>
+          <AssociationSet Name="cmsMember2MemberGroup" Association="UmbracoModel.cmsMember2MemberGroup">
+            <End Role="cmsMember" EntitySet="cmsMembers" />
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+          </AssociationSet>
+          <AssociationSet Name="cmsTagRelationship" Association="UmbracoModel.cmsTagRelationship">
+            <End Role="cmsTags" EntitySet="cmsTags" />
+            <End Role="umbracoNode" EntitySet="umbracoNodes" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="cmsContent">
+          <Key>
+            <PropertyRef Name="pk" />
+          </Key>
+          <Property Name="pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nodeId" Type="Int32" Nullable="false" />
+          <Property Name="contentType" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="umbracoNode" Relationship="UmbracoModel.FK_cmsContent_umbracoNode" FromRole="cmsContent" ToRole="umbracoNode" />
+        </EntityType>
+        <EntityType Name="cmsContentType">
+          <Key>
+            <PropertyRef Name="pk" />
+          </Key>
+          <Property Name="pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nodeId" Type="Int32" Nullable="false" />
+          <Property Name="alias" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="icon" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="thumbnail" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="description" Type="String" MaxLength="1500" Unicode="true" FixedLength="false" />
+          <Property Name="masterContentType" Type="Int32" />
+          <NavigationProperty Name="umbracoNode" Relationship="UmbracoModel.FK_cmsContentType_umbracoNode" FromRole="cmsContentType" ToRole="umbracoNode" />
+        </EntityType>
+        <EntityType Name="cmsContentTypeAllowedContentType">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="AllowedId" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="AllowedId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cmsContentVersion">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ContentId" Type="Int32" Nullable="false" />
+          <Property Name="VersionId" Type="Guid" Nullable="false" />
+          <Property Name="VersionDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="cmsContentXml">
+          <Key>
+            <PropertyRef Name="nodeId" />
+          </Key>
+          <Property Name="nodeId" Type="Int32" Nullable="false" />
+          <Property Name="xml" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="cmsDataType">
+          <Key>
+            <PropertyRef Name="pk" />
+          </Key>
+          <Property Name="pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nodeId" Type="Int32" Nullable="false" />
+          <Property Name="controlId" Type="Guid" Nullable="false" />
+          <Property Name="dbType" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="umbracoNode" Relationship="UmbracoModel.FK_cmsDataType_umbracoNode" FromRole="cmsDataType" ToRole="umbracoNode" />
+        </EntityType>
+        <EntityType Name="cmsDataTypePreValue">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="datatypeNodeId" Type="Int32" Nullable="false" />
+          <Property Name="value" Type="String" MaxLength="2500" Unicode="true" FixedLength="false" />
+          <Property Name="sortorder" Type="Int32" Nullable="false" />
+          <Property Name="alias" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="cmsDictionary">
+          <Key>
+            <PropertyRef Name="pk" />
+          </Key>
+          <Property Name="pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id" Type="Guid" Nullable="false" />
+          <Property Name="parent" Type="Guid" Nullable="false" />
+          <Property Name="key" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="cmsDocument">
+          <Key>
+            <PropertyRef Name="versionId" />
+          </Key>
+          <Property Name="nodeId" Type="Int32" Nullable="false" />
+          <Property Name="published" Type="Boolean" Nullable="false" />
+          <Property Name="documentUser" Type="Int32" Nullable="false" />
+          <Property Name="versionId" Type="Guid" Nullable="false" />
+          <Property Name="text" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="releaseDate" Type="DateTime" Precision="3" />
+          <Property Name="expireDate" Type="DateTime" Precision="3" />
+          <Property Name="updateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="templateId" Type="Int32" />
+          <Property Name="alias" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="newest" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="umbracoNode" Relationship="UmbracoModel.FK_cmsDocument_umbracoNode" FromRole="cmsDocument" ToRole="umbracoNode" />
+        </EntityType>
+        <EntityType Name="cmsDocumentType">
+          <Key>
+            <PropertyRef Name="contentTypeNodeId" />
+            <PropertyRef Name="templateNodeId" />
+          </Key>
+          <Property Name="contentTypeNodeId" Type="Int32" Nullable="false" />
+          <Property Name="templateNodeId" Type="Int32" Nullable="false" />
+          <Property Name="IsDefault" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="umbracoNode" Relationship="UmbracoModel.FK_cmsDocumentType_umbracoNode" FromRole="cmsDocumentType" ToRole="umbracoNode" />
+        </EntityType>
+        <EntityType Name="cmsLanguageText">
+          <Key>
+            <PropertyRef Name="pk" />
+          </Key>
+          <Property Name="pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="languageId" Type="Int32" Nullable="false" />
+          <Property Name="UniqueId" Type="Guid" Nullable="false" />
+          <Property Name="value" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="cmsMacro">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="macroUseInEditor" Type="Boolean" Nullable="false" />
+          <Property Name="macroRefreshRate" Type="Int32" Nullable="false" />
+          <Property Name="macroAlias" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="macroName" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="macroScriptType" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="macroScriptAssembly" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="macroXSLT" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="macroCacheByPage" Type="Boolean" Nullable="false" />
+          <Property Name="macroCachePersonalized" Type="Boolean" Nullable="false" />
+          <Property Name="macroDontRender" Type="Boolean" Nullable="false" />
+          <Property Name="macroPython" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="cmsMacroProperties" Relationship="UmbracoModel.FK_cmsMacroProperty_cmsMacro" FromRole="cmsMacro" ToRole="cmsMacroProperty" />
+        </EntityType>
+        <EntityType Name="cmsMacroProperty">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="macroPropertyHidden" Type="Boolean" Nullable="false" />
+          <Property Name="macroPropertyType" Type="Int16" Nullable="false" />
+          <Property Name="macro" Type="Int32" Nullable="false" />
+          <Property Name="macroPropertySortOrder" Type="Byte" Nullable="false" />
+          <Property Name="macroPropertyAlias" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="macroPropertyName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="cmsMacro" Relationship="UmbracoModel.FK_cmsMacroProperty_cmsMacro" FromRole="cmsMacroProperty" ToRole="cmsMacro" />
+          <NavigationProperty Name="cmsMacroPropertyType" Relationship="UmbracoModel.FK_umbracoMacroProperty_umbracoMacroPropertyType" FromRole="cmsMacroProperty" ToRole="cmsMacroPropertyType" />
+        </EntityType>
+        <EntityType Name="cmsMacroPropertyType">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="macroPropertyTypeAlias" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="macroPropertyTypeRenderAssembly" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="macroPropertyTypeRenderType" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="macroPropertyTypeBaseType" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="cmsMacroProperties" Relationship="UmbracoModel.FK_umbracoMacroProperty_umbracoMacroPropertyType" FromRole="cmsMacroPropertyType" ToRole="cmsMacroProperty" />
+        </EntityType>
+        <EntityType Name="cmsMember">
+          <Key>
+            <PropertyRef Name="nodeId" />
+          </Key>
+          <Property Name="nodeId" Type="Int32" Nullable="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="LoginName" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="umbracoNode" Relationship="UmbracoModel.FK_cmsMember_umbracoNode" FromRole="cmsMember" ToRole="umbracoNode" />
+          <NavigationProperty Name="umbracoNodes" Relationship="UmbracoModel.cmsMember2MemberGroup" FromRole="cmsMember" ToRole="umbracoNode" />
+        </EntityType>
+        <EntityType Name="cmsMemberType">
+          <Key>
+            <PropertyRef Name="pk" />
+          </Key>
+          <Property Name="pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NodeId" Type="Int32" Nullable="false" />
+          <Property Name="propertytypeId" Type="Int32" Nullable="false" />
+          <Property Name="memberCanEdit" Type="Boolean" Nullable="false" />
+          <Property Name="viewOnProfile" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="umbracoNode" Relationship="UmbracoModel.FK_cmsMemberType_umbracoNode" FromRole="cmsMemberType" ToRole="umbracoNode" />
+        </EntityType>
+        <EntityType Name="cmsPreviewXml">
+          <Key>
+            <PropertyRef Name="nodeId" />
+            <PropertyRef Name="versionId" />
+          </Key>
+          <Property Name="nodeId" Type="Int32" Nullable="false" />
+          <Property Name="versionId" Type="Guid" Nullable="false" />
+          <Property Name="timestamp" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="xml" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="cmsPropertyData">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="contentNodeId" Type="Int32" Nullable="false" />
+          <Property Name="versionId" Type="Guid" />
+          <Property Name="propertytypeid" Type="Int32" Nullable="false" />
+          <Property Name="dataInt" Type="Int32" />
+          <Property Name="dataDate" Type="DateTime" Precision="3" />
+          <Property Name="dataNvarchar" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="dataNtext" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="cmsPropertyType" Relationship="UmbracoModel.FK_cmsPropertyData_cmsPropertyType" FromRole="cmsPropertyData" ToRole="cmsPropertyType" />
+          <NavigationProperty Name="umbracoNode" Relationship="UmbracoModel.FK_cmsPropertyData_umbracoNode" FromRole="cmsPropertyData" ToRole="umbracoNode" />
+        </EntityType>
+        <EntityType Name="cmsPropertyType">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dataTypeId" Type="Int32" Nullable="false" />
+          <Property Name="contentTypeId" Type="Int32" Nullable="false" />
+          <Property Name="tabId" Type="Int32" />
+          <Property Name="Alias" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="helpText" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="sortOrder" Type="Int32" Nullable="false" />
+          <Property Name="mandatory" Type="Boolean" Nullable="false" />
+          <Property Name="validationRegExp" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="cmsPropertyDatas" Relationship="UmbracoModel.FK_cmsPropertyData_cmsPropertyType" FromRole="cmsPropertyType" ToRole="cmsPropertyData" />
+          <NavigationProperty Name="cmsTab" Relationship="UmbracoModel.FK_cmsPropertyType_cmsTab" FromRole="cmsPropertyType" ToRole="cmsTab" />
+        </EntityType>
+        <EntityType Name="cmsStylesheet">
+          <Key>
+            <PropertyRef Name="nodeId" />
+          </Key>
+          <Property Name="nodeId" Type="Int32" Nullable="false" />
+          <Property Name="filename" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="content" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="umbracoNode" Relationship="UmbracoModel.FK_cmsStylesheet_umbracoNode" FromRole="cmsStylesheet" ToRole="umbracoNode" />
+        </EntityType>
+        <EntityType Name="cmsStylesheetProperty">
+          <Key>
+            <PropertyRef Name="nodeId" />
+          </Key>
+          <Property Name="nodeId" Type="Int32" Nullable="false" />
+          <Property Name="stylesheetPropertyEditor" Type="Boolean" />
+          <Property Name="stylesheetPropertyAlias" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="stylesheetPropertyValue" Type="String" MaxLength="400" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="umbracoNode" Relationship="UmbracoModel.FK_cmsStylesheetProperty_umbracoNode" FromRole="cmsStylesheetProperty" ToRole="umbracoNode" />
+        </EntityType>
+        <EntityType Name="cmsTab">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="contenttypeNodeId" Type="Int32" Nullable="false" />
+          <Property Name="text" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="sortorder" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="cmsPropertyTypes" Relationship="UmbracoModel.FK_cmsPropertyType_cmsTab" FromRole="cmsTab" ToRole="cmsPropertyType" />
+        </EntityType>
+        <EntityType Name="cmsTag">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tag" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="parentId" Type="Int32" />
+          <Property Name="group" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="umbracoNodes" Relationship="UmbracoModel.cmsTagRelationship" FromRole="cmsTags" ToRole="umbracoNode" />
+        </EntityType>
+        <EntityType Name="cmsTask">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="closed" Type="Boolean" Nullable="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="taskTypeId" Type="Byte" Nullable="false" />
+          <Property Name="nodeId" Type="Int32" Nullable="false" />
+          <Property Name="parentUserId" Type="Int32" Nullable="false" />
+          <Property Name="userId" Type="Int32" Nullable="false" />
+          <Property Name="DateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Comment" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="cmsTaskType" Relationship="UmbracoModel.FK_cmsTask_cmsTaskType" FromRole="cmsTask" ToRole="cmsTaskType" />
+          <NavigationProperty Name="umbracoNode" Relationship="UmbracoModel.FK_cmsTask_umbracoNode" FromRole="cmsTask" ToRole="umbracoNode" />
+          <NavigationProperty Name="umbracoUser" Relationship="UmbracoModel.FK_cmsTask_umbracoUser" FromRole="cmsTask" ToRole="umbracoUser" />
+          <NavigationProperty Name="umbracoUser1" Relationship="UmbracoModel.FK_cmsTask_umbracoUser1" FromRole="cmsTask" ToRole="umbracoUser" />
+        </EntityType>
+        <EntityType Name="cmsTaskType">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="alias" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="cmsTasks" Relationship="UmbracoModel.FK_cmsTask_cmsTaskType" FromRole="cmsTaskType" ToRole="cmsTask" />
+        </EntityType>
+        <EntityType Name="cmsTemplate">
+          <Key>
+            <PropertyRef Name="pk" />
+          </Key>
+          <Property Name="pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nodeId" Type="Int32" Nullable="false" />
+          <Property Name="master" Type="Int32" />
+          <Property Name="alias" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="design" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="umbracoNode" Relationship="UmbracoModel.FK_cmsTemplate_umbracoNode" FromRole="cmsTemplate" ToRole="umbracoNode" />
+        </EntityType>
+        <EntityType Name="umbracoDomain">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="domainDefaultLanguage" Type="Int32" />
+          <Property Name="domainRootStructureID" Type="Int32" />
+          <Property Name="domainName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="umbracoNode" Relationship="UmbracoModel.FK_umbracoDomains_umbracoNode" FromRole="umbracoDomains" ToRole="umbracoNode" />
+        </EntityType>
+        <EntityType Name="umbracoLanguage">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="languageISOCode" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="languageCultureName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="umbracoLog">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userId" Type="Int32" Nullable="false" />
+          <Property Name="NodeId" Type="Int32" Nullable="false" />
+          <Property Name="Datestamp" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="logHeader" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="logComment" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="umbracoNode">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="trashed" Type="Boolean" Nullable="false" />
+          <Property Name="parentID" Type="Int32" Nullable="false" />
+          <Property Name="nodeUser" Type="Int32" />
+          <Property Name="level" Type="Int16" Nullable="false" />
+          <Property Name="path" Type="String" Nullable="false" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="sortOrder" Type="Int32" Nullable="false" />
+          <Property Name="uniqueID" Type="Guid" />
+          <Property Name="text" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="nodeObjectType" Type="Guid" />
+          <Property Name="createDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="cmsContents" Relationship="UmbracoModel.FK_cmsContent_umbracoNode" FromRole="umbracoNode" ToRole="cmsContent" />
+          <NavigationProperty Name="cmsContentTypes" Relationship="UmbracoModel.FK_cmsContentType_umbracoNode" FromRole="umbracoNode" ToRole="cmsContentType" />
+          <NavigationProperty Name="cmsDataTypes" Relationship="UmbracoModel.FK_cmsDataType_umbracoNode" FromRole="umbracoNode" ToRole="cmsDataType" />
+          <NavigationProperty Name="cmsDocuments" Relationship="UmbracoModel.FK_cmsDocument_umbracoNode" FromRole="umbracoNode" ToRole="cmsDocument" />
+          <NavigationProperty Name="cmsDocumentTypes" Relationship="UmbracoModel.FK_cmsDocumentType_umbracoNode" FromRole="umbracoNode" ToRole="cmsDocumentType" />
+          <NavigationProperty Name="cmsMember" Relationship="UmbracoModel.FK_cmsMember_umbracoNode" FromRole="umbracoNode" ToRole="cmsMember" />
+          <NavigationProperty Name="cmsMemberTypes" Relationship="UmbracoModel.FK_cmsMemberType_umbracoNode" FromRole="umbracoNode" ToRole="cmsMemberType" />
+          <NavigationProperty Name="cmsPropertyDatas" Relationship="UmbracoModel.FK_cmsPropertyData_umbracoNode" FromRole="umbracoNode" ToRole="cmsPropertyData" />
+          <NavigationProperty Name="cmsStylesheet" Relationship="UmbracoModel.FK_cmsStylesheet_umbracoNode" FromRole="umbracoNode" ToRole="cmsStylesheet" />
+          <NavigationProperty Name="cmsStylesheetProperty" Relationship="UmbracoModel.FK_cmsStylesheetProperty_umbracoNode" FromRole="umbracoNode" ToRole="cmsStylesheetProperty" />
+          <NavigationProperty Name="cmsTasks" Relationship="UmbracoModel.FK_cmsTask_umbracoNode" FromRole="umbracoNode" ToRole="cmsTask" />
+          <NavigationProperty Name="cmsTemplates" Relationship="UmbracoModel.FK_cmsTemplate_umbracoNode" FromRole="umbracoNode" ToRole="cmsTemplate" />
+          <NavigationProperty Name="umbracoDomains" Relationship="UmbracoModel.FK_umbracoDomains_umbracoNode" FromRole="umbracoNode" ToRole="umbracoDomains" />
+          <NavigationProperty Name="umbracoNode1" Relationship="UmbracoModel.FK_umbracoNode_umbracoNode" FromRole="umbracoNode" ToRole="umbracoNode1" />
+          <NavigationProperty Name="umbracoNode2" Relationship="UmbracoModel.FK_umbracoNode_umbracoNode" FromRole="umbracoNode1" ToRole="umbracoNode" />
+          <NavigationProperty Name="umbracoRelations" Relationship="UmbracoModel.FK_umbracoRelation_umbracoNode" FromRole="umbracoNode" ToRole="umbracoRelation" />
+          <NavigationProperty Name="umbracoRelations1" Relationship="UmbracoModel.FK_umbracoRelation_umbracoNode1" FromRole="umbracoNode" ToRole="umbracoRelation" />
+          <NavigationProperty Name="umbracoUser2NodeNotify" Relationship="UmbracoModel.FK_umbracoUser2NodeNotify_umbracoNode" FromRole="umbracoNode" ToRole="umbracoUser2NodeNotify" />
+          <NavigationProperty Name="umbracoUser2NodePermission" Relationship="UmbracoModel.FK_umbracoUser2NodePermission_umbracoNode" FromRole="umbracoNode" ToRole="umbracoUser2NodePermission" />
+          <NavigationProperty Name="cmsMembers" Relationship="UmbracoModel.cmsMember2MemberGroup" FromRole="umbracoNode" ToRole="cmsMember" />
+          <NavigationProperty Name="cmsTags" Relationship="UmbracoModel.cmsTagRelationship" FromRole="umbracoNode" ToRole="cmsTags" />
+        </EntityType>
+        <EntityType Name="umbracoRelation">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="parentId" Type="Int32" Nullable="false" />
+          <Property Name="childId" Type="Int32" Nullable="false" />
+          <Property Name="relType" Type="Int32" Nullable="false" />
+          <Property Name="datetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="comment" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="umbracoNode" Relationship="UmbracoModel.FK_umbracoRelation_umbracoNode" FromRole="umbracoRelation" ToRole="umbracoNode" />
+          <NavigationProperty Name="umbracoNode1" Relationship="UmbracoModel.FK_umbracoRelation_umbracoNode1" FromRole="umbracoRelation" ToRole="umbracoNode" />
+          <NavigationProperty Name="umbracoRelationType" Relationship="UmbracoModel.FK_umbracoRelation_umbracoRelationType" FromRole="umbracoRelation" ToRole="umbracoRelationType" />
+        </EntityType>
+        <EntityType Name="umbracoRelationType">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dual" Type="Boolean" Nullable="false" />
+          <Property Name="parentObjectType" Type="Guid" Nullable="false" />
+          <Property Name="childObjectType" Type="Guid" Nullable="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="alias" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="umbracoRelations" Relationship="UmbracoModel.FK_umbracoRelation_umbracoRelationType" FromRole="umbracoRelationType" ToRole="umbracoRelation" />
+        </EntityType>
+        <EntityType Name="umbracoUser">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userDisabled" Type="Boolean" Nullable="false" />
+          <Property Name="userNoConsole" Type="Boolean" Nullable="false" />
+          <Property Name="userType" Type="Int16" Nullable="false" />
+          <Property Name="startStructureID" Type="Int32" Nullable="false" />
+          <Property Name="startMediaID" Type="Int32" />
+          <Property Name="userName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="userLogin" Type="String" Nullable="false" MaxLength="125" Unicode="true" FixedLength="false" />
+          <Property Name="userPassword" Type="String" Nullable="false" MaxLength="125" Unicode="true" FixedLength="false" />
+          <Property Name="userEmail" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="userDefaultPermissions" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="userLanguage" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="defaultToLiveEditing" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="cmsTasks" Relationship="UmbracoModel.FK_cmsTask_umbracoUser" FromRole="umbracoUser" ToRole="cmsTask" />
+          <NavigationProperty Name="cmsTasks1" Relationship="UmbracoModel.FK_cmsTask_umbracoUser1" FromRole="umbracoUser" ToRole="cmsTask" />
+          <NavigationProperty Name="umbracoUser2app" Relationship="UmbracoModel.FK_umbracoUser2app_umbracoUser" FromRole="umbracoUser" ToRole="umbracoUser2app" />
+          <NavigationProperty Name="umbracoUser2NodeNotify" Relationship="UmbracoModel.FK_umbracoUser2NodeNotify_umbracoUser" FromRole="umbracoUser" ToRole="umbracoUser2NodeNotify" />
+          <NavigationProperty Name="umbracoUser2NodePermission" Relationship="UmbracoModel.FK_umbracoUser2NodePermission_umbracoUser" FromRole="umbracoUser" ToRole="umbracoUser2NodePermission" />
+          <NavigationProperty Name="umbracoUserType" Relationship="UmbracoModel.FK_user_userType" FromRole="umbracoUser" ToRole="umbracoUserType" />
+        </EntityType>
+        <EntityType Name="umbracoUser2app">
+          <Key>
+            <PropertyRef Name="user" />
+            <PropertyRef Name="app" />
+          </Key>
+          <Property Name="user" Type="Int32" Nullable="false" />
+          <Property Name="app" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="umbracoUser" Relationship="UmbracoModel.FK_umbracoUser2app_umbracoUser" FromRole="umbracoUser2app" ToRole="umbracoUser" />
+        </EntityType>
+        <EntityType Name="umbracoUser2NodeNotify">
+          <Key>
+            <PropertyRef Name="userId" />
+            <PropertyRef Name="nodeId" />
+            <PropertyRef Name="action" />
+          </Key>
+          <Property Name="userId" Type="Int32" Nullable="false" />
+          <Property Name="nodeId" Type="Int32" Nullable="false" />
+          <Property Name="action" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="umbracoNode" Relationship="UmbracoModel.FK_umbracoUser2NodeNotify_umbracoNode" FromRole="umbracoUser2NodeNotify" ToRole="umbracoNode" />
+          <NavigationProperty Name="umbracoUser" Relationship="UmbracoModel.FK_umbracoUser2NodeNotify_umbracoUser" FromRole="umbracoUser2NodeNotify" ToRole="umbracoUser" />
+        </EntityType>
+        <EntityType Name="umbracoUser2NodePermission">
+          <Key>
+            <PropertyRef Name="userId" />
+            <PropertyRef Name="nodeId" />
+            <PropertyRef Name="permission" />
+          </Key>
+          <Property Name="userId" Type="Int32" Nullable="false" />
+          <Property Name="nodeId" Type="Int32" Nullable="false" />
+          <Property Name="permission" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="umbracoNode" Relationship="UmbracoModel.FK_umbracoUser2NodePermission_umbracoNode" FromRole="umbracoUser2NodePermission" ToRole="umbracoNode" />
+          <NavigationProperty Name="umbracoUser" Relationship="UmbracoModel.FK_umbracoUser2NodePermission_umbracoUser" FromRole="umbracoUser2NodePermission" ToRole="umbracoUser" />
+        </EntityType>
+        <EntityType Name="umbracoUserLogin">
+          <Key>
+            <PropertyRef Name="contextID" />
+            <PropertyRef Name="userID" />
+            <PropertyRef Name="timeout" />
+          </Key>
+          <Property Name="contextID" Type="Guid" Nullable="false" />
+          <Property Name="userID" Type="Int32" Nullable="false" />
+          <Property Name="timeout" Type="Int64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="umbracoUserType">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userTypeAlias" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="userTypeName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="userTypeDefaultPermissions" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="umbracoUsers" Relationship="UmbracoModel.FK_user_userType" FromRole="umbracoUserType" ToRole="umbracoUser" />
+        </EntityType>
+        <Association Name="FK_cmsContent_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="1" />
+          <End Role="cmsContent" Type="UmbracoModel.cmsContent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsContent">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsContentType_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="1" />
+          <End Role="cmsContentType" Type="UmbracoModel.cmsContentType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsContentType">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsDataType_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="1" />
+          <End Role="cmsDataType" Type="UmbracoModel.cmsDataType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsDataType">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsDocument_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="1" />
+          <End Role="cmsDocument" Type="UmbracoModel.cmsDocument" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsDocument">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsDocumentType_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="1" />
+          <End Role="cmsDocumentType" Type="UmbracoModel.cmsDocumentType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsDocumentType">
+              <PropertyRef Name="contentTypeNodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsMacroProperty_cmsMacro">
+          <End Role="cmsMacro" Type="UmbracoModel.cmsMacro" Multiplicity="1" />
+          <End Role="cmsMacroProperty" Type="UmbracoModel.cmsMacroProperty" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cmsMacro">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsMacroProperty">
+              <PropertyRef Name="macro" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoMacroProperty_umbracoMacroPropertyType">
+          <End Role="cmsMacroPropertyType" Type="UmbracoModel.cmsMacroPropertyType" Multiplicity="1" />
+          <End Role="cmsMacroProperty" Type="UmbracoModel.cmsMacroProperty" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cmsMacroPropertyType">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsMacroProperty">
+              <PropertyRef Name="macroPropertyType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsMember_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="1" />
+          <End Role="cmsMember" Type="UmbracoModel.cmsMember" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsMember">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsMemberType_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="1" />
+          <End Role="cmsMemberType" Type="UmbracoModel.cmsMemberType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsMemberType">
+              <PropertyRef Name="NodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsPropertyData_cmsPropertyType">
+          <End Role="cmsPropertyType" Type="UmbracoModel.cmsPropertyType" Multiplicity="1" />
+          <End Role="cmsPropertyData" Type="UmbracoModel.cmsPropertyData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cmsPropertyType">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsPropertyData">
+              <PropertyRef Name="propertytypeid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsPropertyData_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="1" />
+          <End Role="cmsPropertyData" Type="UmbracoModel.cmsPropertyData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsPropertyData">
+              <PropertyRef Name="contentNodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsPropertyType_cmsTab">
+          <End Role="cmsTab" Type="UmbracoModel.cmsTab" Multiplicity="0..1" />
+          <End Role="cmsPropertyType" Type="UmbracoModel.cmsPropertyType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cmsTab">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsPropertyType">
+              <PropertyRef Name="tabId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsStylesheet_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="1" />
+          <End Role="cmsStylesheet" Type="UmbracoModel.cmsStylesheet" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsStylesheet">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsStylesheetProperty_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="1" />
+          <End Role="cmsStylesheetProperty" Type="UmbracoModel.cmsStylesheetProperty" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsStylesheetProperty">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsTask_cmsTaskType">
+          <End Role="cmsTaskType" Type="UmbracoModel.cmsTaskType" Multiplicity="1" />
+          <End Role="cmsTask" Type="UmbracoModel.cmsTask" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cmsTaskType">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsTask">
+              <PropertyRef Name="taskTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsTask_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="1" />
+          <End Role="cmsTask" Type="UmbracoModel.cmsTask" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsTask">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsTask_umbracoUser">
+          <End Role="umbracoUser" Type="UmbracoModel.umbracoUser" Multiplicity="1" />
+          <End Role="cmsTask" Type="UmbracoModel.cmsTask" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoUser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsTask">
+              <PropertyRef Name="parentUserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsTask_umbracoUser1">
+          <End Role="umbracoUser" Type="UmbracoModel.umbracoUser" Multiplicity="1" />
+          <End Role="cmsTask" Type="UmbracoModel.cmsTask" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoUser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsTask">
+              <PropertyRef Name="userId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_cmsTemplate_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="1" />
+          <End Role="cmsTemplate" Type="UmbracoModel.cmsTemplate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="cmsTemplate">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoDomains_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="0..1" />
+          <End Role="umbracoDomains" Type="UmbracoModel.umbracoDomain" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoDomains">
+              <PropertyRef Name="domainRootStructureID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoNode_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="1" />
+          <End Role="umbracoNode1" Type="UmbracoModel.umbracoNode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoNode1">
+              <PropertyRef Name="parentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoRelation_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="1" />
+          <End Role="umbracoRelation" Type="UmbracoModel.umbracoRelation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoRelation">
+              <PropertyRef Name="parentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoRelation_umbracoNode1">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="1" />
+          <End Role="umbracoRelation" Type="UmbracoModel.umbracoRelation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoRelation">
+              <PropertyRef Name="childId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoUser2NodeNotify_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="1" />
+          <End Role="umbracoUser2NodeNotify" Type="UmbracoModel.umbracoUser2NodeNotify" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoUser2NodeNotify">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoUser2NodePermission_umbracoNode">
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="1" />
+          <End Role="umbracoUser2NodePermission" Type="UmbracoModel.umbracoUser2NodePermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoNode">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoUser2NodePermission">
+              <PropertyRef Name="nodeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoRelation_umbracoRelationType">
+          <End Role="umbracoRelationType" Type="UmbracoModel.umbracoRelationType" Multiplicity="1" />
+          <End Role="umbracoRelation" Type="UmbracoModel.umbracoRelation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoRelationType">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoRelation">
+              <PropertyRef Name="relType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoUser2app_umbracoUser">
+          <End Role="umbracoUser" Type="UmbracoModel.umbracoUser" Multiplicity="1" />
+          <End Role="umbracoUser2app" Type="UmbracoModel.umbracoUser2app" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoUser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoUser2app">
+              <PropertyRef Name="user" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoUser2NodeNotify_umbracoUser">
+          <End Role="umbracoUser" Type="UmbracoModel.umbracoUser" Multiplicity="1" />
+          <End Role="umbracoUser2NodeNotify" Type="UmbracoModel.umbracoUser2NodeNotify" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoUser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoUser2NodeNotify">
+              <PropertyRef Name="userId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_umbracoUser2NodePermission_umbracoUser">
+          <End Role="umbracoUser" Type="UmbracoModel.umbracoUser" Multiplicity="1" />
+          <End Role="umbracoUser2NodePermission" Type="UmbracoModel.umbracoUser2NodePermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoUser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoUser2NodePermission">
+              <PropertyRef Name="userId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_user_userType">
+          <End Role="umbracoUserType" Type="UmbracoModel.umbracoUserType" Multiplicity="1" />
+          <End Role="umbracoUser" Type="UmbracoModel.umbracoUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="umbracoUserType">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="umbracoUser">
+              <PropertyRef Name="userType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="cmsMember2MemberGroup">
+          <End Role="cmsMember" Type="UmbracoModel.cmsMember" Multiplicity="*" />
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="*" />
+        </Association>
+        <Association Name="cmsTagRelationship">
+          <End Role="cmsTags" Type="UmbracoModel.cmsTag" Multiplicity="*" />
+          <End Role="umbracoNode" Type="UmbracoModel.umbracoNode" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="UmbracoModelStoreContainer" CdmEntityContainer="UmbracoEntities">
+          <EntitySetMapping Name="cmsContents">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsContent">
+              <MappingFragment StoreEntitySet="cmsContent">
+                <ScalarProperty Name="pk" ColumnName="pk" />
+                <ScalarProperty Name="nodeId" ColumnName="nodeId" />
+                <ScalarProperty Name="contentType" ColumnName="contentType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsContentTypes">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsContentType">
+              <MappingFragment StoreEntitySet="cmsContentType">
+                <ScalarProperty Name="pk" ColumnName="pk" />
+                <ScalarProperty Name="nodeId" ColumnName="nodeId" />
+                <ScalarProperty Name="alias" ColumnName="alias" />
+                <ScalarProperty Name="icon" ColumnName="icon" />
+                <ScalarProperty Name="thumbnail" ColumnName="thumbnail" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="masterContentType" ColumnName="masterContentType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsContentTypeAllowedContentTypes">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsContentTypeAllowedContentType">
+              <MappingFragment StoreEntitySet="cmsContentTypeAllowedContentType">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AllowedId" ColumnName="AllowedId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsContentVersions">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsContentVersion">
+              <MappingFragment StoreEntitySet="cmsContentVersion">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="ContentId" ColumnName="ContentId" />
+                <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+                <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsContentXmls">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsContentXml">
+              <MappingFragment StoreEntitySet="cmsContentXml">
+                <ScalarProperty Name="nodeId" ColumnName="nodeId" />
+                <ScalarProperty Name="xml" ColumnName="xml" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsDataTypes">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsDataType">
+              <MappingFragment StoreEntitySet="cmsDataType">
+                <ScalarProperty Name="pk" ColumnName="pk" />
+                <ScalarProperty Name="nodeId" ColumnName="nodeId" />
+                <ScalarProperty Name="controlId" ColumnName="controlId" />
+                <ScalarProperty Name="dbType" ColumnName="dbType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsDataTypePreValues">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsDataTypePreValue">
+              <MappingFragment StoreEntitySet="cmsDataTypePreValues">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="datatypeNodeId" ColumnName="datatypeNodeId" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="sortorder" ColumnName="sortorder" />
+                <ScalarProperty Name="alias" ColumnName="alias" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsDictionaries">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsDictionary">
+              <MappingFragment StoreEntitySet="cmsDictionary">
+                <ScalarProperty Name="pk" ColumnName="pk" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="parent" ColumnName="parent" />
+                <ScalarProperty Name="key" ColumnName="key" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsDocuments">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsDocument">
+              <MappingFragment StoreEntitySet="cmsDocument">
+                <ScalarProperty Name="nodeId" ColumnName="nodeId" />
+                <ScalarProperty Name="published" ColumnName="published" />
+                <ScalarProperty Name="documentUser" ColumnName="documentUser" />
+                <ScalarProperty Name="versionId" ColumnName="versionId" />
+                <ScalarProperty Name="text" ColumnName="text" />
+                <ScalarProperty Name="releaseDate" ColumnName="releaseDate" />
+                <ScalarProperty Name="expireDate" ColumnName="expireDate" />
+                <ScalarProperty Name="updateDate" ColumnName="updateDate" />
+                <ScalarProperty Name="templateId" ColumnName="templateId" />
+                <ScalarProperty Name="alias" ColumnName="alias" />
+                <ScalarProperty Name="newest" ColumnName="newest" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsDocumentTypes">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsDocumentType">
+              <MappingFragment StoreEntitySet="cmsDocumentType">
+                <ScalarProperty Name="contentTypeNodeId" ColumnName="contentTypeNodeId" />
+                <ScalarProperty Name="templateNodeId" ColumnName="templateNodeId" />
+                <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsLanguageTexts">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsLanguageText">
+              <MappingFragment StoreEntitySet="cmsLanguageText">
+                <ScalarProperty Name="pk" ColumnName="pk" />
+                <ScalarProperty Name="languageId" ColumnName="languageId" />
+                <ScalarProperty Name="UniqueId" ColumnName="UniqueId" />
+                <ScalarProperty Name="value" ColumnName="value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsMacroes">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsMacro">
+              <MappingFragment StoreEntitySet="cmsMacro">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="macroUseInEditor" ColumnName="macroUseInEditor" />
+                <ScalarProperty Name="macroRefreshRate" ColumnName="macroRefreshRate" />
+                <ScalarProperty Name="macroAlias" ColumnName="macroAlias" />
+                <ScalarProperty Name="macroName" ColumnName="macroName" />
+                <ScalarProperty Name="macroScriptType" ColumnName="macroScriptType" />
+                <ScalarProperty Name="macroScriptAssembly" ColumnName="macroScriptAssembly" />
+                <ScalarProperty Name="macroXSLT" ColumnName="macroXSLT" />
+                <ScalarProperty Name="macroCacheByPage" ColumnName="macroCacheByPage" />
+                <ScalarProperty Name="macroCachePersonalized" ColumnName="macroCachePersonalized" />
+                <ScalarProperty Name="macroDontRender" ColumnName="macroDontRender" />
+                <ScalarProperty Name="macroPython" ColumnName="macroPython" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsMacroProperties">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsMacroProperty">
+              <MappingFragment StoreEntitySet="cmsMacroProperty">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="macroPropertyHidden" ColumnName="macroPropertyHidden" />
+                <ScalarProperty Name="macroPropertyType" ColumnName="macroPropertyType" />
+                <ScalarProperty Name="macro" ColumnName="macro" />
+                <ScalarProperty Name="macroPropertySortOrder" ColumnName="macroPropertySortOrder" />
+                <ScalarProperty Name="macroPropertyAlias" ColumnName="macroPropertyAlias" />
+                <ScalarProperty Name="macroPropertyName" ColumnName="macroPropertyName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsMacroPropertyTypes">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsMacroPropertyType">
+              <MappingFragment StoreEntitySet="cmsMacroPropertyType">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="macroPropertyTypeAlias" ColumnName="macroPropertyTypeAlias" />
+                <ScalarProperty Name="macroPropertyTypeRenderAssembly" ColumnName="macroPropertyTypeRenderAssembly" />
+                <ScalarProperty Name="macroPropertyTypeRenderType" ColumnName="macroPropertyTypeRenderType" />
+                <ScalarProperty Name="macroPropertyTypeBaseType" ColumnName="macroPropertyTypeBaseType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsMembers">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsMember">
+              <MappingFragment StoreEntitySet="cmsMember">
+                <ScalarProperty Name="nodeId" ColumnName="nodeId" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsMemberTypes">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsMemberType">
+              <MappingFragment StoreEntitySet="cmsMemberType">
+                <ScalarProperty Name="pk" ColumnName="pk" />
+                <ScalarProperty Name="NodeId" ColumnName="NodeId" />
+                <ScalarProperty Name="propertytypeId" ColumnName="propertytypeId" />
+                <ScalarProperty Name="memberCanEdit" ColumnName="memberCanEdit" />
+                <ScalarProperty Name="viewOnProfile" ColumnName="viewOnProfile" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsPreviewXmls">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsPreviewXml">
+              <MappingFragment StoreEntitySet="cmsPreviewXml">
+                <ScalarProperty Name="nodeId" ColumnName="nodeId" />
+                <ScalarProperty Name="versionId" ColumnName="versionId" />
+                <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+                <ScalarProperty Name="xml" ColumnName="xml" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsPropertyDatas">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsPropertyData">
+              <MappingFragment StoreEntitySet="cmsPropertyData">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="contentNodeId" ColumnName="contentNodeId" />
+                <ScalarProperty Name="versionId" ColumnName="versionId" />
+                <ScalarProperty Name="propertytypeid" ColumnName="propertytypeid" />
+                <ScalarProperty Name="dataInt" ColumnName="dataInt" />
+                <ScalarProperty Name="dataDate" ColumnName="dataDate" />
+                <ScalarProperty Name="dataNvarchar" ColumnName="dataNvarchar" />
+                <ScalarProperty Name="dataNtext" ColumnName="dataNtext" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsPropertyTypes">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsPropertyType">
+              <MappingFragment StoreEntitySet="cmsPropertyType">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="dataTypeId" ColumnName="dataTypeId" />
+                <ScalarProperty Name="contentTypeId" ColumnName="contentTypeId" />
+                <ScalarProperty Name="tabId" ColumnName="tabId" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="helpText" ColumnName="helpText" />
+                <ScalarProperty Name="sortOrder" ColumnName="sortOrder" />
+                <ScalarProperty Name="mandatory" ColumnName="mandatory" />
+                <ScalarProperty Name="validationRegExp" ColumnName="validationRegExp" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsStylesheets">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsStylesheet">
+              <MappingFragment StoreEntitySet="cmsStylesheet">
+                <ScalarProperty Name="nodeId" ColumnName="nodeId" />
+                <ScalarProperty Name="filename" ColumnName="filename" />
+                <ScalarProperty Name="content" ColumnName="content" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsStylesheetProperties">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsStylesheetProperty">
+              <MappingFragment StoreEntitySet="cmsStylesheetProperty">
+                <ScalarProperty Name="nodeId" ColumnName="nodeId" />
+                <ScalarProperty Name="stylesheetPropertyEditor" ColumnName="stylesheetPropertyEditor" />
+                <ScalarProperty Name="stylesheetPropertyAlias" ColumnName="stylesheetPropertyAlias" />
+                <ScalarProperty Name="stylesheetPropertyValue" ColumnName="stylesheetPropertyValue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsTabs">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsTab">
+              <MappingFragment StoreEntitySet="cmsTab">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="contenttypeNodeId" ColumnName="contenttypeNodeId" />
+                <ScalarProperty Name="text" ColumnName="text" />
+                <ScalarProperty Name="sortorder" ColumnName="sortorder" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsTags">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsTag">
+              <MappingFragment StoreEntitySet="cmsTags">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="tag" ColumnName="tag" />
+                <ScalarProperty Name="parentId" ColumnName="parentId" />
+                <ScalarProperty Name="group" ColumnName="group" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsTasks">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsTask">
+              <MappingFragment StoreEntitySet="cmsTask">
+                <ScalarProperty Name="closed" ColumnName="closed" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="taskTypeId" ColumnName="taskTypeId" />
+                <ScalarProperty Name="nodeId" ColumnName="nodeId" />
+                <ScalarProperty Name="parentUserId" ColumnName="parentUserId" />
+                <ScalarProperty Name="userId" ColumnName="userId" />
+                <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsTaskTypes">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsTaskType">
+              <MappingFragment StoreEntitySet="cmsTaskType">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="alias" ColumnName="alias" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmsTemplates">
+            <EntityTypeMapping TypeName="UmbracoModel.cmsTemplate">
+              <MappingFragment StoreEntitySet="cmsTemplate">
+                <ScalarProperty Name="pk" ColumnName="pk" />
+                <ScalarProperty Name="nodeId" ColumnName="nodeId" />
+                <ScalarProperty Name="master" ColumnName="master" />
+                <ScalarProperty Name="alias" ColumnName="alias" />
+                <ScalarProperty Name="design" ColumnName="design" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="umbracoDomains">
+            <EntityTypeMapping TypeName="UmbracoModel.umbracoDomain">
+              <MappingFragment StoreEntitySet="umbracoDomains">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="domainDefaultLanguage" ColumnName="domainDefaultLanguage" />
+                <ScalarProperty Name="domainRootStructureID" ColumnName="domainRootStructureID" />
+                <ScalarProperty Name="domainName" ColumnName="domainName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="umbracoLanguages">
+            <EntityTypeMapping TypeName="UmbracoModel.umbracoLanguage">
+              <MappingFragment StoreEntitySet="umbracoLanguage">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="languageISOCode" ColumnName="languageISOCode" />
+                <ScalarProperty Name="languageCultureName" ColumnName="languageCultureName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="umbracoLogs">
+            <EntityTypeMapping TypeName="UmbracoModel.umbracoLog">
+              <MappingFragment StoreEntitySet="umbracoLog">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="userId" ColumnName="userId" />
+                <ScalarProperty Name="NodeId" ColumnName="NodeId" />
+                <ScalarProperty Name="Datestamp" ColumnName="Datestamp" />
+                <ScalarProperty Name="logHeader" ColumnName="logHeader" />
+                <ScalarProperty Name="logComment" ColumnName="logComment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="umbracoNodes">
+            <EntityTypeMapping TypeName="UmbracoModel.umbracoNode">
+              <MappingFragment StoreEntitySet="umbracoNode">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="trashed" ColumnName="trashed" />
+                <ScalarProperty Name="parentID" ColumnName="parentID" />
+                <ScalarProperty Name="nodeUser" ColumnName="nodeUser" />
+                <ScalarProperty Name="level" ColumnName="level" />
+                <ScalarProperty Name="path" ColumnName="path" />
+                <ScalarProperty Name="sortOrder" ColumnName="sortOrder" />
+                <ScalarProperty Name="uniqueID" ColumnName="uniqueID" />
+                <ScalarProperty Name="text" ColumnName="text" />
+                <ScalarProperty Name="nodeObjectType" ColumnName="nodeObjectType" />
+                <ScalarProperty Name="createDate" ColumnName="createDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="umbracoRelations">
+            <EntityTypeMapping TypeName="UmbracoModel.umbracoRelation">
+              <MappingFragment StoreEntitySet="umbracoRelation">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="parentId" ColumnName="parentId" />
+                <ScalarProperty Name="childId" ColumnName="childId" />
+                <ScalarProperty Name="relType" ColumnName="relType" />
+                <ScalarProperty Name="datetime" ColumnName="datetime" />
+                <ScalarProperty Name="comment" ColumnName="comment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="umbracoRelationTypes">
+            <EntityTypeMapping TypeName="UmbracoModel.umbracoRelationType">
+              <MappingFragment StoreEntitySet="umbracoRelationType">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="dual" ColumnName="dual" />
+                <ScalarProperty Name="parentObjectType" ColumnName="parentObjectType" />
+                <ScalarProperty Name="childObjectType" ColumnName="childObjectType" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="alias" ColumnName="alias" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="umbracoUsers">
+            <EntityTypeMapping TypeName="UmbracoModel.umbracoUser">
+              <MappingFragment StoreEntitySet="umbracoUser">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="userDisabled" ColumnName="userDisabled" />
+                <ScalarProperty Name="userNoConsole" ColumnName="userNoConsole" />
+                <ScalarProperty Name="userType" ColumnName="userType" />
+                <ScalarProperty Name="startStructureID" ColumnName="startStructureID" />
+                <ScalarProperty Name="startMediaID" ColumnName="startMediaID" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+                <ScalarProperty Name="userLogin" ColumnName="userLogin" />
+                <ScalarProperty Name="userPassword" ColumnName="userPassword" />
+                <ScalarProperty Name="userEmail" ColumnName="userEmail" />
+                <ScalarProperty Name="userDefaultPermissions" ColumnName="userDefaultPermissions" />
+                <ScalarProperty Name="userLanguage" ColumnName="userLanguage" />
+                <ScalarProperty Name="defaultToLiveEditing" ColumnName="defaultToLiveEditing" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="umbracoUser2app">
+            <EntityTypeMapping TypeName="UmbracoModel.umbracoUser2app">
+              <MappingFragment StoreEntitySet="umbracoUser2app">
+                <ScalarProperty Name="user" ColumnName="user" />
+                <ScalarProperty Name="app" ColumnName="app" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="umbracoUser2NodeNotify">
+            <EntityTypeMapping TypeName="UmbracoModel.umbracoUser2NodeNotify">
+              <MappingFragment StoreEntitySet="umbracoUser2NodeNotify">
+                <ScalarProperty Name="userId" ColumnName="userId" />
+                <ScalarProperty Name="nodeId" ColumnName="nodeId" />
+                <ScalarProperty Name="action" ColumnName="action" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="umbracoUser2NodePermission">
+            <EntityTypeMapping TypeName="UmbracoModel.umbracoUser2NodePermission">
+              <MappingFragment StoreEntitySet="umbracoUser2NodePermission">
+                <ScalarProperty Name="userId" ColumnName="userId" />
+                <ScalarProperty Name="nodeId" ColumnName="nodeId" />
+                <ScalarProperty Name="permission" ColumnName="permission" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="umbracoUserLogins">
+            <EntityTypeMapping TypeName="UmbracoModel.umbracoUserLogin">
+              <MappingFragment StoreEntitySet="umbracoUserLogins">
+                <ScalarProperty Name="contextID" ColumnName="contextID" />
+                <ScalarProperty Name="userID" ColumnName="userID" />
+                <ScalarProperty Name="timeout" ColumnName="timeout" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="umbracoUserTypes">
+            <EntityTypeMapping TypeName="UmbracoModel.umbracoUserType">
+              <MappingFragment StoreEntitySet="umbracoUserType">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="userTypeAlias" ColumnName="userTypeAlias" />
+                <ScalarProperty Name="userTypeName" ColumnName="userTypeName" />
+                <ScalarProperty Name="userTypeDefaultPermissions" ColumnName="userTypeDefaultPermissions" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="cmsMember2MemberGroup" TypeName="UmbracoModel.cmsMember2MemberGroup" StoreEntitySet="cmsMember2MemberGroup">
+            <EndProperty Name="cmsMember">
+              <ScalarProperty Name="nodeId" ColumnName="Member" />
+            </EndProperty>
+            <EndProperty Name="umbracoNode">
+              <ScalarProperty Name="id" ColumnName="MemberGroup" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="cmsTagRelationship" TypeName="UmbracoModel.cmsTagRelationship" StoreEntitySet="cmsTagRelationship">
+            <EndProperty Name="cmsTags">
+              <ScalarProperty Name="id" ColumnName="tagId" />
+            </EndProperty>
+            <EndProperty Name="umbracoNode">
+              <ScalarProperty Name="id" ColumnName="nodeId" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Default" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

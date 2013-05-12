@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7d9f189ff3704d6bb69bbfb1a754afd4" Name="Diagram1">
+        <EntityTypeShape EntityType="UmbracoModel.cmsContent" Width="1.5" PointX="5.25" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsContentType" Width="1.5" PointX="5.25" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsContentTypeAllowedContentType" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsContentVersion" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsContentXml" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsDataType" Width="1.5" PointX="5.25" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsDataTypePreValue" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsDictionary" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsDocument" Width="1.5" PointX="5.25" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsDocumentType" Width="1.5" PointX="5.25" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsLanguageText" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsMacro" Width="1.5" PointX="8.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsMacroProperty" Width="1.5" PointX="11" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsMacroPropertyType" Width="1.5" PointX="8.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsMember" Width="1.5" PointX="5.25" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsMemberType" Width="1.5" PointX="5.25" PointY="29.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsPreviewXml" Width="1.5" PointX="10.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsPropertyData" Width="1.5" PointX="8.25" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsPropertyType" Width="1.5" PointX="6" PointY="51.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsStylesheet" Width="1.5" PointX="5.25" PointY="36.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsStylesheetProperty" Width="1.5" PointX="5.25" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsTab" Width="1.5" PointX="3.75" PointY="52.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsTag" Width="1.5" PointX="0.75" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsTask" Width="1.5" PointX="8.25" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsTaskType" Width="1.5" PointX="6" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.cmsTemplate" Width="1.5" PointX="5.25" PointY="45.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.umbracoDomain" Width="1.5" PointX="5.25" PointY="48.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.umbracoLanguage" Width="1.5" PointX="10.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.umbracoLog" Width="1.5" PointX="10.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.umbracoNode" Width="1.5" PointX="3" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.umbracoRelation" Width="1.5" PointX="8.25" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.umbracoRelationType" Width="1.5" PointX="6" PointY="32.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.umbracoUser" Width="1.5" PointX="6" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.umbracoUser2app" Width="1.5" PointX="8.25" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.umbracoUser2NodeNotify" Width="1.5" PointX="11.25" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.umbracoUser2NodePermission" Width="1.5" PointX="11.25" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.umbracoUserLogin" Width="1.5" PointX="12.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UmbracoModel.umbracoUserType" Width="1.5" PointX="3.75" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsContent_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsContentType_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsDataType_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsDocument_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsDocumentType_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsMacroProperty_cmsMacro" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_umbracoMacroProperty_umbracoMacroPropertyType" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsMember_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsMemberType_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsPropertyData_cmsPropertyType" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsPropertyData_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsPropertyType_cmsTab" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsStylesheet_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsStylesheetProperty_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsTask_cmsTaskType" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsTask_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsTask_umbracoUser" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsTask_umbracoUser1" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_cmsTemplate_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_umbracoDomains_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_umbracoNode_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_umbracoRelation_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_umbracoRelation_umbracoNode1" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_umbracoUser2NodeNotify_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_umbracoUser2NodePermission_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_umbracoRelation_umbracoRelationType" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_umbracoUser2app_umbracoUser" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_umbracoUser2NodeNotify_umbracoUser" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_umbracoUser2NodePermission_umbracoUser" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.FK_user_userType" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.cmsMember2MemberGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="UmbracoModel.cmsTagRelationship" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
