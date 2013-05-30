@@ -64,7 +64,7 @@ namespace UmbracoEx
         public T GetPropertyValue<T>(string alias, T defaultValue)
         {
             var el = this.GetProperty(alias);
-            return el == null ? default(T) : el.Value.ConvertTo<T>(defaultValue);
+            return el == null ? defaultValue : el.Value.ConvertTo<T>(defaultValue);
         }
 
         public Nullable<T> GetPropertyNullableValue<T>(string alias) where T : struct
