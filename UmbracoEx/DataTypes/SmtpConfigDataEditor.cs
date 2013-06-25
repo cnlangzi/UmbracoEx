@@ -31,6 +31,7 @@ namespace UmbracoEx.DataTypes
         public string UserName { get; set; }
         public string Password { get; set; }
         public bool DefaultCredentials { get; set; }
+        public bool EnableSSL { get; set; }
 
         public override string DataTypeName
         {
@@ -57,6 +58,7 @@ namespace UmbracoEx.DataTypes
         private TextBox txtUserName;
         private TextBox txtPassword;
         private CheckBox ckbDefaultCredentials;
+        private CheckBox ckbEnableSsl;
 
         private CustomValidator Validator;
 
@@ -87,6 +89,7 @@ namespace UmbracoEx.DataTypes
             this.Validator.ServerValidate += new ServerValidateEventHandler(Validator_ServerValidate);
 
             this.ckbDefaultCredentials = new CheckBox() { ID = this.Control.ID + "_ckbDefaultCredentials" };
+            this.ckbEnableSsl = new CheckBox { ID = this.Control.ID + "_enableSsl" };
 
 
             if (mailSettings != null)
@@ -97,6 +100,7 @@ namespace UmbracoEx.DataTypes
                 this.txtUserName.Text = mailSettings.Smtp.Network.UserName;
                 this.txtPassword.Text = mailSettings.Smtp.Network.Password;
                 this.ckbDefaultCredentials.Checked = mailSettings.Smtp.Network.DefaultCredentials;
+                this.ckbEnableSsl.Checked = mailSettings.Smtp.Network.EnableSsl;
             }
 
             this.Control.Controls.Add(new LiteralControl("<label style=\"display:block\">From:</label>"));
@@ -111,6 +115,8 @@ namespace UmbracoEx.DataTypes
             this.Control.Controls.Add(this.txtPassword);
             this.Control.Controls.Add(new LiteralControl("</br><label>DefaultCredentials:</label>"));
             this.Control.Controls.Add(this.ckbDefaultCredentials);
+            this.Control.Controls.Add(new LiteralControl("</br><label>EnableSSL:</label>"));
+            this.Control.Controls.Add(this.ckbEnableSsl);
 
         }
 
@@ -178,6 +184,8 @@ namespace UmbracoEx.DataTypes
             network.SetAttributeValue("userName", this.txtUserName.Text);
             network.SetAttributeValue("password", this.txtPassword.Text);
             network.SetAttributeValue("defaultCredentials", this.ckbDefaultCredentials.Checked);
+            network.SetAttributeValue("enableSsl", this.ckbEnableSsl.Checked);
+            
 
 
             xDocument.Save(fullWebConfigFileName, SaveOptions.None);

@@ -50,6 +50,9 @@ namespace UmbracoEx
 
             SmtpClient client = new SmtpClient();
             client.Send(message);
+            var node = umbraco.NodeFactory.Node.GetCurrent();
+            var user = umbraco.BusinessLogic.User.GetCurrent();
+            umbraco.BusinessLogic.Log.Add(umbraco.BusinessLogic.LogTypes.Notify, user ?? null, node == null ? -1 : node.Id, string.Format("Sent email [{0}] {1} to {2}", message.Subject, message.Body, string.Join(",", message.To.Select(i => i.Address).ToArray())));
         }
 
         static string ReplaceTokens(string source, List<string> tokens)
@@ -63,7 +66,7 @@ namespace UmbracoEx
 
             var expression = regex.Replace(source, match =>
             {
-               
+
                 for (var i = 0; i < tokens.Count; i++)
                 {
                     var token = tokens[i];
@@ -72,7 +75,7 @@ namespace UmbracoEx
                     {
                         if (match.Value.StartsWith("{" + token + ":", StringComparison.InvariantCultureIgnoreCase))
                         {
-                        
+
                             var replaced = "{" + i.ToString() + match.Value.Remove(0, token.Length + 1);
 
                             return replaced;
