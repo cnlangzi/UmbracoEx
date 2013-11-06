@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>EBA</id>
-    <version>0.2.4.8</version>
+    <version>0.3.19</version>
     <title>EbaFramework</title>
     <authors>Dayi Chen</authors>
     <owners>Dayi Chen</owners>
@@ -10,7 +10,6 @@
     <iconUrl>http://download-codeplex.sec.s-msft.com/Download?ProjectName=eba&amp;DownloadId=528679&amp;Build=19612</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A base code for enterprise business application development, includes IoC, Aop and Localization .</description>
-    <releaseNotes />
     <copyright />
     <language>zh-CN</language>
     <tags>企业应用</tags>
@@ -23,8 +22,5 @@
       <frameworkAssembly assemblyName="System.Runtime.Serialization" targetFramework=".NETFramework4.0" />
       <frameworkAssembly assemblyName="System.ServiceProcess" targetFramework=".NETFramework4.0" />
     </frameworkAssemblies>
-    <references>
-      <reference file="EBA.dll" />
-    </references>
   </metadata>
 </package>

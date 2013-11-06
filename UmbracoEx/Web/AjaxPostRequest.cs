@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web.UI;
-using EBA.Helpers;
+using EBA.Ex;
 using System.Web.Script.Serialization;
 using System.Web;
 using System.Threading;

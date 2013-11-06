@@ -50,12 +50,12 @@
     <Reference Include="CookComputing.XmlRpcV2">
       <HintPath>..\packages\UmbracoCms.Core.4.7.2\lib\CookComputing.XmlRpcV2.dll</HintPath>
     </Reference>
-    <Reference Include="EBA">
-      <HintPath>..\packages\EBA.0.2.4.8\lib\net40\EBA.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+    <Reference Include="EBA, Version=0.3.0.22881, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\projects\NarnooSDK\umbraco-media-library\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EBA.0.3.19\lib\Net40\EBA.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Examine">
       <HintPath>..\packages\UmbracoCms.Core.4.7.2\lib\Examine.dll</HintPath>
@@ -204,7 +204,9 @@
     <None Include="EntityContext.edmx.diagram">
       <DependentUpon>EntityContext.edmx</DependentUpon>
     </None>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

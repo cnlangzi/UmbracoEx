@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Xml.Linq;
 using umbraco.NodeFactory;
-using EBA.Helpers;
+using EBA.Ex;
 using umbraco.interfaces;
 
 namespace UmbracoEx

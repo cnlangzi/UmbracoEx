@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.IO;
-using EBA.Helpers;
+using EBA.Ex;
 
 [assembly: WebResource("UmbracoEx.Web.UEX.js", "text/javascript", PerformSubstitution = true)]
 namespace UmbracoEx.Web

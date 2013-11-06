@@ -10,7 +10,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml.Linq;
 using umbraco.cms.businesslogic.datatype;
-using EBA.Helpers;
+using EBA.Ex;
 
 namespace UmbracoEx.DataTypes
 {

@@ -5,7 +5,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Web;
-using EBA.Helpers;
+using EBA.Ex;
 
 namespace UmbracoEx
 {
